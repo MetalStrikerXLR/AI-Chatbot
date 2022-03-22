@@ -1,8 +1,8 @@
 # AI-Chatbot
-## _Prototype Chatbot with Intent Detection based Response
+## Prototype Chatbot with Intent Detection based Response
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
 
-Description - TBD
+Prototype Chatbot still under Development. The bot uses AI to identify intents and provide the best possible response. Flask used as a deployment platform over web. The web portal provides statistics configuration/training panel for the ChatBot
 
 ## Compatibility
 - Python 3.6+
