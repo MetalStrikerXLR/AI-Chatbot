@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./static/intent_manager.css">
+  	<link rel="stylesheet" href="./static/lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./static/lib/tagin/dist/tagin.min.css" />
+	<link rel="stylesheet" href="./static/lib/fontawesome-free-6.0.0-web/css/all.css">
+	<link href="./static/lib/aos-2/dist/aos.css" rel="stylesheet">
+
+  	<script src="./static/lib/jquery.min.js"></script>
+  	<script src="./static/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+	<script src="./static/lib/tagin/dist/tagin.min.js"></script>
+
+	<script src="./static/lib/tinymce/tinymce.min.js"></script>
+    <script>
+    	var activeID = "responses";
+    	var maxField = 10;
+		var x = 0;
+
+        tinymce.init({
+			selector: '#response_editor',
+			height: 300,
+			menubar: false,
+			plugins: [
+				'advlist autolink lists link image charmap print preview anchor textcolor emoticons',
+				'searchreplace visualblocks code fullscreen',
+				'insertdatetime media table paste code help wordcount'
+			],
+
+			toolbar: 'bold italic forecolor backcolor link table | alignleft aligncenter ' +
+			'alignright | bullist numlist outdent indent | ' +
+			'removeformat',
+			content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+
+			init_instance_callback:function(editor)
+			{
+         		editor.setContent(document.getElementById("responses").value);
+     		},
+
+			setup : function(ed)
+			{
+				ed.on("change", function(e){
+					var ResHTML = tinyMCE.get("response_editor").getContent();
+		  			document.getElementById(activeID).value = ResHTML;
+				});
+
+				ed.on("keyup", function(){
+					var ResHTML = tinyMCE.get("response_editor").getContent();
+		  			document.getElementById(activeID).value = ResHTML;
+				});
+		   }
+        });
+
+		tinymce.init({
+			selector: '#link_editor',
+			height: 120,
+			menubar: false,
+			plugins: ['advlist autolink lists link image textcolor emoticons'],
+			toolbar:'bold italic forecolor backcolor link',
+			content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+
+			init_instance_callback:function(editor)
+			{
+         		editor.setContent(document.getElementById("link").value);
+     		},
+
+			setup : function(ed)
+			{
+				ed.on("change", function(e){
+					var LinkHTML = tinyMCE.get("link_editor").getContent();
+		  			document.getElementById("link").value = LinkHTML;
+				});
+
+				ed.on("keyup", function(){
+					var LinkHTML = tinyMCE.get("link_editor").getContent();
+		  			document.getElementById("link").value = LinkHTML;
+				});
+		   }
+        });
+
+		function set_activeID(element)
+		{
+		  activeID = element.id;
+		  tinyMCE.get("response_editor").setContent(document.getElementById(activeID).value);
+		};
+
+		function update_editor()
+		{
+		  tinyMCE.get("response_editor").setContent(document.getElementById(activeID).value);
+		};
+
+		function update_editor2()
+		{
+		  tinyMCE.get("link_editor").setContent(document.getElementById("link").value);
+		};
+
+		function toggleInfo(checkbox)
+		{
+			var infoText = document.getElementById("resp-info").innerText;
+			if (checkbox.checked)
+			{
+				document.getElementById("resp-info").innerText = "- Responses will be displayed Randomly";
+			}
+			else
+			{
+				document.getElementById("resp-info").innerText = "- Responses will be displayed as individual Chat Bubbles";
+			}
+		};
+
+		function addResponseField(display_value = "")
+		{
+			var wrapper = document.getElementById('field_wrapper');
+			if(x < maxField)
+			{
+				var fieldHTML = `<div class="input-group control-group mb-1" data-aos="fade-left" data-aos-duration="800"><input type="text" class="form-control" name="extra_res_${x}" id="extra_res_${x}" onclick="set_activeID(this)" onkeyup="update_editor()" value="${display_value}"><a class="btn btn-danger" style="color: white;" id="remove_button" onclick="removeResponseField(this)" role="button"><i class="fas fa-minus"></i></a></div>`;
+				wrapper.insertAdjacentHTML('beforeend', fieldHTML);
+				x++;
+			}
+			return x;
+		};
+
+		function removeResponseField(element)
+		{
+			element.parentNode.parentNode.removeChild(element.parentNode);
+			x--;
+		};
+    </script>
+
+	<title>Edit Intent</title>
+</head>
+
+<body>
+	</br>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-2" data-aos="fade-right" data-aos-duration="1000">
+				<div class="shadow p-2 bg-light rounded">
+					<h1 class="display-4">Intent Modifier</h1>
+					<p class="lead">Add and modify Intents</p>
+					<hr class="my-4">
+					<p><b>Intent Tag:</b> Identification for each Intent.</p>
+					<p><b>Detection Patterns:</b> Patterns used to recognize asked Queries</p>
+					<p><b>Bot Responses:</b> The Response that the Bot will give</p>
+					<p><b>Clickable Choices:</b> Responses as Choices that can be Clicked (optional)</p>
+					<p><b>External Link:</b> Response as External Link (optional)</p>
+					<p><b>Context Set:</b> Sets Intent Context (optional)</p>
+					<p><b>Context Filter:</b> Sets Intent Context Filter  (optional)</p>
+				</div>
+			</div>
+
+			<div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+				<form action="/intent_edit_action" method="POST">
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="ID">ID</label></h5>
+						<input readonly type="text" class="form-control" name="ID" id="ID" value="{{ edit_intent[0] }}">
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="tag">Tag</label></h5>
+						<input type="text" class="form-control" name="tag" id="tag" value="{{ edit_intent[1] }}">
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="pattern">Detection Pattern</label></h5>
+						<input type="text" class="form-control tagin" name="pattern" id="pattern" value="{{ edit_intent[2] }}">
+					</div></br>
+
+					<div id="field_wrapper" class="shadow p-2 bg-light rounded">
+						<h5><label for="responses">Bot Responses</label></h5>
+
+						<label class="switch">
+						  <input type="checkbox" name="resp-check" id="resp-check" onchange="toggleInfo(this)">
+						  <span class="slider round"></span>
+						</label>
+
+						<label><h6 id="resp-info">- Responses will be displayed as individual Chat Bubbles</h6></label>
+
+						{% if edit_intent[3] == True %}
+						<script>
+							document.getElementById("resp-check").checked = true;
+							document.getElementById("resp-info").innerText = "- Responses will be displayed Randomly";
+						</script>
+						{% endif %}
+
+						<div class="input-group control-group mb-1">
+							<input type="text" class="form-control" data-aos="fade-left" data-aos-duration="800" name="responses" id="responses" onclick="set_activeID(this)" onkeyup="update_editor()"  value="{{ edit_intent[4][0] }}">
+							<a class="btn btn-success" style="color: white;" onclick="addResponseField()" role="button"><i class="fas fa-plus"></i></a></br>
+						</div>
+
+						{% for ext_responses in edit_intent[5] %}
+						<script>
+							addResponseField("{{ ext_responses }}");
+						</script>
+						{% endfor %}
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="choices">Clickable Choices</label></h5>
+						<input type="text" class="form-control tagin" name="choices" id="choices"  value="{{ edit_intent[6] }}">
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="link">External Link</label></h5>
+						<input type="text" class="form-control" name="link" id="link" onkeyup="update_editor2()" value="{{ edit_intent[7] }}">
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="cntx-set">Response Context Set</label></h5>
+						<input type="text" class="form-control" name="cntx-set" id="cntx-set" value="{{ edit_intent[8] }}">
+					</div></br>
+
+					<div class="shadow p-2 bg-light rounded">
+						<h5><label for="cntx-fltr">Response Context Filter</label></h5>
+						<input type="text" class="form-control" name="cntx-fltr" id="cntx-fltr" value="{{ edit_intent[9] }}">
+					</div></br>
+
+					<input class="btn btn-primary btn-lg btn-sm" type="submit" value="Save Intent">
+				</form>
+			</div>
+
+			<div class="col-lg-3" data-aos="fade-left" data-aos-duration="1000">
+				</br>
+				<div  class="shadow p-2 bg-light rounded">
+					<h2>Response Editor</h2>
+					<textarea id="response_editor" name="response_editor"></textarea>
+				</div>
+				</br>
+				<div  class="shadow p-2 bg-light rounded">
+					<h2>Ext. Link Editor</h2>
+					<textarea id="link_editor" name="link_editor"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="./static/lib/aos-2/dist/aos.js"></script>
+	<script>
+		AOS.init();
+		document.querySelectorAll('.tagin').forEach((input) => {
+		  const tagin = new Tagin(input,
+		  {
+			  separator: ';',
+			  duplicate: false,
+			  enter: false,
+			  transform: 'input => input',
+			  placeholder: ''
+			})
+		});
+	</script>
+</body>
+</html>

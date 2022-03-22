@@ -1,0 +1,4333 @@
+{
+    "intents": [
+        {
+            "tag": "Greetings",
+            "patterns": [
+                "hey",
+                "hi",
+                "hello",
+                "hola",
+                "whatsup",
+                "hey there",
+                "hi buddy",
+                "AoA",
+                "kya haal hai?"
+            ],
+            "responses": [
+                "<p>Hey! Welcome to PTCL KnowledgeBase. How can I help you?</p>"
+            ],
+            "context_set": [
+                "start"
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "do",
+            "patterns": [
+                "what you can tell me",
+                "what do you do?",
+                "what info you can give?",
+                "why are you here?",
+                "who are you",
+                "how can you help me",
+                "how can you help us"
+            ],
+            "responses": [
+                "<p>I am the PTCL T&amp;D ChatBot developed by the AI Research Team. I can help you in PTCL Product related queries to help you answer and guide customers</p>"
+            ],
+            "context_filter": [
+                "start"
+            ],
+            "context_set": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "bye",
+            "patterns": [
+                "bye",
+                "goodbye",
+                "see you next time",
+                "no bye",
+                "no",
+                "exit",
+                "quit",
+                "takecare bye",
+                "ok"
+            ],
+            "responses": [
+                "Goodbye Sir! if you have any other query, feel free to ask again! "
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "thanks",
+                "nice info",
+                "thanks for solving my query",
+                "thanks man",
+                "well info",
+                "thanks for telling",
+                "no problem",
+                "np"
+            ],
+            "responses": [
+                "Thank you Sir! Glad to provide you our services. Do you have any other query sir? "
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "againquery",
+            "patterns": [
+                "yes i have",
+                "i have a query",
+                "i want to ask a query",
+                "yeah i have a query",
+                "yes",
+                "ok"
+            ],
+            "responses": [
+                "I would be delighted to help, what is your query sir? "
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "taking to bot fine",
+            "patterns": [
+                "how are you",
+                "how are you feeling",
+                "are you fine?",
+                "is you good"
+            ],
+            "responses": [
+                "I am fine, Thank you for asking. Do you have any query?"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "afterbotfine/yes",
+            "patterns": [
+                "yes i have",
+                "i want to ask a query",
+                "yeah i have a query",
+                "yes"
+            ],
+            "responses": [
+                "I am happy to solve your query, what is your query sir? "
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                "",
+                "dcd",
+                "jhgdshjcgsj",
+                "ckjbdschj"
+            ],
+            "responses": [
+                "<p>Sorry Sir, I am unable to understand your query. Maybe try rephrasing it?</p><p>If you are unable to find your required information then share your feedback at <span style=\"background-color: #fbeeb8;\"><strong>v.Umairismail@ptclgroup.com</strong></span></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p>If your query still can't be answered, it means it hasn't been added in my memory bank yet.</p>"
+            ]
+        },
+        {
+            "tag": "talkinggeneral",
+            "patterns": [
+                "are you free",
+                "i love you",
+                "wanna date with me",
+                "kesy hu tum"
+            ],
+            "responses": [
+                "Please ask queries related to PTCL Information and Products "
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Online Bill View",
+            "patterns": [
+                "Is there any way to check my bill online",
+                "How can I check my bill online",
+                "Any way to check my bill online",
+                "Please help me to find my bill online",
+                "Kindly guide me how can I view my bill online",
+                "how i can view my bill"
+            ],
+            "responses": [
+                "<p>Customers can find their bill online through bill portal by entering your PTCL PSTN Number and billing ID (given on any of your previous bill).</p><p>Moreover, you can access your billing details through PTCL&rsquo;s Touch app and PTCL Official Webiste.</p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "Installation Charges",
+            "patterns": [
+                "What are the installation charges",
+                "How much do I need to pay to get my services installed",
+                "What is the amount of installation of PTCL services",
+                "What is the price of installation of services",
+                "What are the internet installation charges",
+                "installation charges"
+            ],
+            "responses": [
+                "<p>For copper connection, Installation charges are <strong>Rs.3500</strong> and GPON/Flash Fiber charges are <strong>Rs.5000</strong>.&nbsp;</p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/30-discount-on-installation-charges-promotion/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ]
+        },
+        {
+            "tag": "Shifting Charges",
+            "patterns": [
+                "What are the shifting charges?",
+                "How much do I need to pay to shift my services to another location",
+                "I want to shift to another place, are there any charges involved",
+                "Will it cost me if I shift services"
+            ],
+            "responses": [
+                "<p>Shifting charges are 500 PKR.</p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ]
+        },
+        {
+            "tag": "Internet Packages",
+            "patterns": [
+                "BB pkgs",
+                "internet pkgs",
+                "broadband packages",
+                "BB Packages",
+                "packages",
+                "pkgs",
+                "pakgs"
+            ],
+            "responses": [
+                "<p>Information for following packages is available:</p>"
+            ],
+            "choices": [
+                "ADSL Packages",
+                "VDSL Packages",
+                "Flash Fiber Packages"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL Packages",
+            "patterns": [
+                "VDSL Packages",
+                " vdsl pkgs",
+                "1 vdsl",
+                "2 vdsl",
+                "5 vdsl",
+                " 6 vdsl",
+                "8 vdsl",
+                "15 vdsl",
+                "25 vdsl",
+                "50 vdsl",
+                "100 vdsl"
+            ],
+            "responses": [
+                "<p>Select a package for more info</p>"
+            ],
+            "choices": [
+                "VDSL 6Mbps Unlimited",
+                "VDSL 8Mbps Unlimited",
+                "VDSL 15Mbps Unlimited",
+                "VDSL 25Mbps Unlimited",
+                "VDSL 50Mbps Unlimited",
+                "VDSL 100Mbps Unlimited",
+                "VDSL 1Mbps Unlimited",
+                "VDSL 2Mbps Unlimited",
+                "VDSL 4Mbps Unlimited"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ADSL Packages",
+            "patterns": [
+                "ADSL Packages",
+                "dsl pkges",
+                "  adsl pkgs",
+                " 1 adsl",
+                " 2 adsl",
+                " 5 adsl",
+                "  6 adsl",
+                " 8 adsl",
+                " 15 adsl ",
+                " 8 adsl",
+                " 5 adsl"
+            ],
+            "responses": [
+                "<p>Select a package for more info:</p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                "ADSL 5Mbps Starter Package",
+                " ADSL 1Mbps Unlimited",
+                " ADSL 2Mbps Unlimited",
+                "ADSL 4Mbps Unlimited",
+                " ADSL 6Mbps Unlimited",
+                " ADSL 8Mbps Unlimited",
+                " ADSL 15Mbps Unlimited"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click Here For more info</a></p>"
+            ]
+        },
+        {
+            "tag": "ADSL 5Mbps Starter",
+            "patterns": [
+                "ADSL 5Mbps Starter",
+                "5mb adsl",
+                "5 mb capped package",
+                "5 adsl",
+                "What are the charges of 5mb starter package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 5Mbps ADSL</li><li>Monthly Charges (Rs.): 1,349</li><li>Data volume: 60 GB Data</li><li>Technology: ADSL2+</li><li>Download Speed: 5Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On Net Calls, CLI : N/A</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle (Rs.): 55</li></ul>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ]
+        },
+        {
+            "tag": "ADSL 1Mbps Unlimited",
+            "patterns": [
+                "1mb adsl",
+                "1Mbps Unlimited package",
+                "1 adsl",
+                "What are the charges of 1mb dsl package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 1 Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 1Mbps</li><li>Upload Speed: 512Kbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ]
+        },
+        {
+            "tag": "ADSL 2Mbps Unlimited",
+            "patterns": [
+                "2mb adsl",
+                "1Mbps Unlimited package",
+                "2 adsl",
+                "What are the charges of 2mb dsl package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 2 Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 2Mbps</li><li>Upload Speed: 768 Kbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ADSL 4Mbps Unlimited",
+            "patterns": [
+                "4mb adsl",
+                "4Mbps Unlimited package",
+                "4 adsl",
+                "What are the charges of 4mb dsl package",
+                "ADSL 4Mbps Unlimited",
+                "adsl 4mb",
+                "4mb adsl ki price kiya hai?"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 4 Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 4Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ADSL 6Mbps Unlimited",
+            "patterns": [
+                "6mb adsl",
+                "4Mbps Unlimited package",
+                "6 adsl",
+                "What are the charges of 6mb dsl package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 6 Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 6Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ADSL 8Mbps Unlimited",
+            "patterns": [
+                "8mb adsl",
+                "8Mbps Unlimited package",
+                "8 adsl",
+                "What are the charges of 8mb dsl package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 8Mbps Unlimited</li><li>Monthly Charges (Rs.): 2,319</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 8Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ADSL 15Mbps Unlimited",
+            "patterns": [
+                "15mb adsl",
+                "15Mbps Unlimited package",
+                "15 adsl",
+                "What are the charges of 15mb dsl package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 15Mbps Unlimited</li><li>Monthly Charges (Rs.): 2,819</li><li>Data volume: Unlimited</li><li>Technology: ADSL2+</li><li>Download Speed: 15Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/dsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 1Mbps Unlimited",
+            "patterns": [
+                "1mb Vdsl",
+                "VDSL 1Mbps Unlimited VDSL package",
+                "1 VDSL",
+                "What are the charges of 1mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 1Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 1Mbps</li><li>Upload Speed: 512Kbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 2Mbps Unlimited",
+            "patterns": [
+                "2mb adsl",
+                "VDSL 2Mbps Unlimited package",
+                "2 VDSL",
+                "What are the charges of 2mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 2Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 2Mbps</li><li>Upload Speed: 1Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 4Mbps Unlimited",
+            "patterns": [
+                "4mb VDSL",
+                "VDSL 4Mbps Unlimited package",
+                "4 VDSL",
+                "What are the charges of 4mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package:4Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 4Mbps</li><li>Upload Speed: 2Mbps</li><li>Free On</li><li>Net Calls, CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 6Mbps Unlimited",
+            "patterns": [
+                "6mb VDSL",
+                " VDSL 6Mbps Unlimited package",
+                "6 VDSL",
+                "What are the charges of 6mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package:6Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,829</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 6Mbps</li><li>Upload Speed: 3Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 525</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ]
+        },
+        {
+            "tag": "VDSL 8Mbps Unlimited",
+            "patterns": [
+                "8mb VDSL",
+                " VDSL 8Mbps Unlimited package",
+                "8 VDSL",
+                "What are the charges of 8mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 8Mbps Unlimited</li><li>Monthly Charges (Rs.): 2,289</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 8Mbps</li><li>Upload Speed: 4Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 15Mbps Unlimited",
+            "patterns": [
+                "15mb VDSL",
+                "vdsl 15Mbps Unlimited package",
+                "15 VDSL",
+                "What are the charges of 15mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 15Mbps Unlimited</li><li>Monthly Charges (Rs.): 2,819</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 15Mbps</li><li>Upload Speed: 7.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 25Mbps Unlimited",
+            "patterns": [
+                "25mb VDSL",
+                " VDSL 25Mbps Unlimited package",
+                "25 VDSL",
+                "What are the charges of 25mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 25Mbps Unlimited</li><li>Monthly Charges (Rs.): 3,379</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 25Mbps</li><li>Upload Speed: 12.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 50Mbps Unlimited",
+            "patterns": [
+                "50mb VDSL",
+                " VDSL 50Mbps Unlimited package",
+                "50 VDSL",
+                "What are the charges of 50mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 50Mbps Unlimited</li><li>Monthly Charges (Rs.): 5,229</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 50Mbps</li><li>Upload Speed: 25Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VDSL 100Mbps Unlimited",
+            "patterns": [
+                "100mb VDSL",
+                " VDSL 100Mbps Unlimited package",
+                "100VDSL",
+                "What are the charges of 100mb VDSL package"
+            ],
+            "responses": [
+                "<ul><li>BB Package:100Mbps Unlimited</li><li>Monthly Charges (Rs.): 7,749</li><li>Data volume: Unlimited</li><li>Technology: VDSL2</li><li>Download Speed: 100Mbps</li><li>Upload Speed: 50Mbps</li><li>Free On Net Calls: Free</li><li>Smart TV (Rs.) : Free</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber",
+            "patterns": [
+                "Flash FIber Packages",
+                "Flash Fiber pkgs",
+                "what si flash fiber?",
+                "flash fiber new portfolio"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div>Flash Fiber is PTCL&rsquo;s premium Fiber-to-the-Home (FTTH) service.</div><div>It&rsquo;s the fastest internet in town giving you blazing speeds of up to 250Mbps with unlimited downloads.</div></div><p>Following packages are available:</p>"
+            ],
+            "choices": [
+                "Flash Fiber 10Mbps Unlimited",
+                "Flash Fiber 20Mbps Unlimited",
+                "Flash Fiber 30Mbps Unlimited",
+                "Flash Fiber 50Mbps Unlimited",
+                "Flash Fiber 75Mbps Unlimited",
+                "Flash Fiber 100Mbps Unlimited",
+                "Flash Fiber 250Mbps Unlimited"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber 10Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 10Mbps Unlimited",
+                "what are the charges of 10mb flash fiber?",
+                "10mb flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 10Mbps Unlimited</li><li>Monthly Charges (Rs.): 1,999</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 10Mbps</li><li>Upload Speed: 7.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. 600</u></li></ul></ul>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ]
+        },
+        {
+            "tag": "Flash Fiber 20Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 20Mbps Unlimited",
+                "20mb flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 20Mbps Unlimited</li><li>Monthly Charges (Rs.): 2,529</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 20Mbps</li><li>Upload Speed: 15Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. 600</u></li></ul></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber 30Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 30Mbps Unlimited",
+                "30mb flash fiber",
+                "what are the charges of 30mb flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 30Mbps Unlimited</li><li>Monthly Charges (Rs.): 3,199</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 30Mbps</li><li>Upload Speed: 22.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. </u><u>2</u><u>00</u></li></ul></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber 50Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 50Mbps Unlimited",
+                "50mb flash fiber",
+                "what are the charges of 50mb flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 50Mbps Unlimited</li><li>Monthly Charges (Rs.): 4,599</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 50Mbps</li><li>Upload Speed: 37.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. </u><u>2</u><u>00</u></li></ul></ul>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ]
+        },
+        {
+            "tag": "Flash Fiber 75Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 75Mbps Unlimited",
+                "75mb flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 75Mbps Unlimited</li><li>Monthly Charges (Rs.): 6,549</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 75Mbps</li><li>Upload Speed: 56.25Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. </u><u>2</u><u>00</u></li></ul></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber 100Mbps Unlimited",
+            "patterns": [
+                "100mb Flash Fiber",
+                " Flash Fiber 100Mbps Unlimited package",
+                "100 Flash Fiber",
+                "What are the charges of 100mb Flash Fiber package"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 100Mbps Unlimited</li><li>Monthly Charges (Rs.): 7,849</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 100Mbps</li><li>Upload Speed: 75Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. </u><u>1</u><u>00</u></li></ul></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Broadband Promotions",
+            "patterns": [
+                "New bb promo",
+                "new bb promos",
+                "Broadband Promotions",
+                "BB promos"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\"><strong>Click on any promo to get complete details.</strong></span></p><ul><li><a href=\"http://10.192.5.15/ib/dsl-2-mbps-unlimited-zero-pstn-line-rent-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">2Mbps Unlimited 0LR Promo</a></li><li><a href=\"http://10.192.5.15/ib/xdsl-4-mbps-unlimited-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">4Mbps Unlimited Promo</a></li><li><a href=\"http://10.192.5.15/ib/xdsl-6-mbps-unlimited-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">6Mbps Unlimited Promo</a></li><li><a href=\"http://10.192.5.15/ib/xdsl-8-mbps-unlimited-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">8Mbps Unlimited Promo</a></li><li><a href=\"http://10.192.5.15/ib/vdsl-gpon-25-mbps-unlimited-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">VDSL &amp; GPON 25 Mbps Promo</a></li><li><a href=\"http://10.192.5.15/ib/xdsl-gpon-15-mbps-unlimited-promotion-for-selected-exchanges-may-2020/\" target=\"_blank\" rel=\"noopener\">xDSL &amp; GPON 15 Mbps Promo</a></li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/all-active-and-available-promotions-new/\" target=\"_blank\" rel=\"noopener\">Click here for complete Info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom Packages/PSTN Packages/Landline /Voice Packages",
+            "patterns": [
+                "pstn package",
+                "freedom pkgs",
+                "voice pkgs",
+                "PSTN PKGS",
+                " telephone packages",
+                " telephone pkgs",
+                " landline pkgs",
+                "landline packags"
+            ],
+            "responses": [
+                "<p>Experience uninterrupted calling with bundle of amazing add-ons with PTCL's \"New Freedom Voice Packages\". For more info please click below:</p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                "Freedom 500",
+                "Freedom 1000",
+                "Freedom 3000",
+                "Freedom 5000",
+                "Freedom 8000"
+            ],
+            "external_link": [
+                "<p><span style=\"background-color: #ecf0f1;\"><a style=\"background-color: #ecf0f1;\" href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\">Click Here for more Info</a></span></p>"
+            ]
+        },
+        {
+            "tag": "PSTN VAS",
+            "patterns": [
+                "PSTN VAS",
+                " landline vas",
+                "VAS Charges"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div>Please choose from below</div></div>"
+            ],
+            "choices": [
+                "Abbreviated Dialing",
+                "Call Transfer (Immediately)",
+                "Call Transfer No Reply",
+                "Call transfer busy",
+                "3 Way Conference Call",
+                "CLI Services"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\"><em><strong>For further info.&nbsp;Click here</strong></em></a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Installation charges promo",
+            "patterns": [
+                "bb installation charges promo",
+                "bb installation charges info",
+                " promo for installation charges",
+                " new installation charges promo",
+                " 30% installation charges promo",
+                " wireline installation charges promo",
+                " installation charges promo"
+            ],
+            "responses": [
+                "<p>Customers get 30% discount on installation charges for all PTCL services.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/30-discount-on-installation-charges-promotion/\" target=\"_blank\" rel=\"noopener\">Click here to get more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TAT and Charges",
+            "patterns": [
+                "tat info",
+                " wireless tat",
+                " wireline tat info",
+                " tat and charges information",
+                " wireline tat",
+                " tat and charges info",
+                " TAT and Charges"
+            ],
+            "responses": [
+                "<p>Please choose from below</p>"
+            ],
+            "choices": [
+                "Data Down/UP Grade TAT",
+                "Dbill By Post TAT",
+                "Dbill By Email TAT",
+                "CDR by E-mail TAT",
+                "CDR by Post TAT",
+                "Shifting (Same Exchange)",
+                "Shifting (External)"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/tat-and-charges/\" target=\"_blank\" rel=\"noopener\">Click here for more information on above</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji Converge ares",
+            "patterns": [
+                " charji coverage",
+                " lte coverage areas",
+                " LTE coverage area",
+                " charji coverage areas"
+            ],
+            "responses": [
+                "<p>CharJi LTE services are available in the following cities across Pakistan:</p><ul><li>Karachi</li><li>Lahore</li><li>Islamabad</li><li>Rawalpindi</li><li>Peshawar</li><li>Multan</li><li>Gujranwala</li><li>Sialkot</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-others/evo-coverage-areas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO Coverage areas",
+            "patterns": [
+                "wingle coverage areas",
+                " wingle device coverage area",
+                " 9.3 coverage area",
+                " EVO 3G COVERAGE AREAS"
+            ],
+            "responses": [
+                "<p>PTCL 3G Wireless Services Are available in 200 Plus Cities in Pakistan.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-others/evo-coverage-areas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji Packages",
+            "patterns": [
+                "charji packages",
+                " charji pkgs",
+                "Charji k packages kia hain",
+                "charji dy pkg"
+            ],
+            "responses": [
+                "<ul><li>Unlimited Package (LTR) in Rs.1499</li><li>Unlimited Package (KTR) in Rs.1499</li><li>Unlimited Package (N) in Rs.1999</li><li>50 GB in Rs. 1,500</li><li>30 GB in Rs. 1,250</li><li>20 GB in Rs. 1,000</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/charji/charji-cloud/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji price",
+            "patterns": [
+                "LTE charji price",
+                " charji device price",
+                " Charj price"
+            ],
+            "responses": [
+                "Charji Device Price = Rs.2500"
+            ]
+        },
+        {
+            "tag": "9.3 device price",
+            "patterns": [
+                "3G price",
+                " Wingle device price",
+                " 3G device price",
+                " 9.3 Mb price"
+            ],
+            "responses": [
+                "3G Device Price = Rs.2000"
+            ]
+        },
+        {
+            "tag": "GPON Coverage",
+            "patterns": [
+                "GPON Coverage areas",
+                " GPON Coverage",
+                "Flash fiber coverage areas"
+            ],
+            "responses": [
+                "Please use wireline usage portal for Flash Fiber Coverage areas"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"https://pcrm.ptcl.net.pk:8098/UsagePortal/Login.aspx\" target=\"_blank\" rel=\"noopener\">Wireline Usage Portal</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Verifications Checks",
+            "patterns": [
+                "what are the verifications check",
+                " Verifications",
+                " Verification",
+                " Verification Checks"
+            ],
+            "responses": [
+                "<p>Please choose from below:</p>"
+            ],
+            "choices": [
+                "Technical Assistance",
+                "EVO/Charji Restoration",
+                "EVO/Charji Package Change",
+                "OTT Password Refreshed"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/verifications/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Smart Tv services/IPTV",
+            "patterns": [
+                "smart tv",
+                " IPTV",
+                "PTCL IPTV",
+                " IPTV Services",
+                " PTCL Smart Tv Services"
+            ],
+            "responses": [
+                "<ul><li>Watch 130+ TV channels</li><li>High Picture quality</li><li>TV On Demand (TVOD)/Catch Up TV</li><li>Personal Video Recording</li><li>TSTV (Time shift television)</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/smart-tv/smart-tv/iptv/\" target=\"_blank\" rel=\"noopener\">Click here to get more details of smart tv services</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Neflix",
+            "patterns": [
+                "what is netflix",
+                " Netflix billing via PTCL bill",
+                " Netflix"
+            ],
+            "responses": [
+                "<p>PTCL customers can now subscribe to Netflix without a credit card. All existing and new customers can get their Netflix charges in PTCL monthly bill. So enjoy easy, secure and completely hassle free billing.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/netflix/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Starzplay by Cinepax",
+            "patterns": [
+                "Starzplay",
+                " Starzplay by cinepax",
+                " starzplay with ptcl bill"
+            ],
+            "responses": [
+                "Now customer can pay Starzplay subscription charges through their PTCL Telephone bill. Subscribe to Starzplay through www.ptcl.com.pk/starzplay and enjoy latest movies and TV series"
+            ]
+        },
+        {
+            "tag": "PTCL Shop details",
+            "patterns": [
+                "ptcl joint shops list",
+                " ptcl joint shops",
+                " ptcl shops list",
+                " ptcl shops details",
+                " PTCL and ufone joint shops",
+                " Joint shops info",
+                " PTCL Shops"
+            ],
+            "responses": [
+                "<p>PTCL Joint shops are operational from:</p><ul><li>9:00 AM to 05:00 PM for Regular shops</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/ptcl-shop/\" target=\"_blank\" rel=\"noopener\">Click here to get PTCL shops details</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Wireless (EVO/Charji) Prepaid Recharge Channels",
+            "patterns": [
+                "How To Recharge EVO?",
+                "wireless prepaid recharge",
+                "wireless recharge",
+                "recharge evo",
+                "How to recharge EVO",
+                "How to recharge in charji?",
+                "Charji recharge options"
+            ],
+            "responses": [
+                "Please guide customer to recharge via\n<li>PTCL Official Website\n<li>PTCLTouch App \n<li>PCPM Machine\n<li>Uload\n<li>Easypaisa \n<li>Jazz Cash"
+            ]
+        },
+        {
+            "tag": "BB Fair Usage Policy",
+            "patterns": [
+                "what is broadband fair usage policy",
+                " BB Fair Usage Policy",
+                "BB FUP",
+                "Broadband FUP",
+                "FUP"
+            ],
+            "responses": [
+                "Please choose from below:"
+            ],
+            "choices": [
+                "FUP for less than 20Mbps",
+                "FUP for 20Mbps & Above"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/fup-on-broadband-packages/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "FUP for less than 20Mbps",
+            "patterns": [
+                "1mb fup",
+                "2mb fup",
+                "4mb fup",
+                "6mb fup",
+                "8mb  fup",
+                "15mb fup",
+                "Broadband Fup for less then 20mb",
+                " BB FUP for less then 20Mbps",
+                "fup for less then 20mb"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\"><strong>FUP for less than 20Mbps Packages</strong></span></p><p>&nbsp;</p><ul><li style=\"text-align: left;\">Usage Limit: 1 TB (1,000 GBs)</li><li style=\"text-align: left;\">Additional Volume Bucket: 100 GBs for Rs.200</li><li style=\"text-align: left;\">Additional Buckets Allowed: 15</li><li style=\"text-align: left;\">Maximum Additional ChargesRs.3,000</li><li style=\"text-align: left;\">Maximum Ceiling Limit: 15 buckets/1500 GBs</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "FUP for 20Mbps & Above",
+            "patterns": [
+                "20mb fup",
+                "25mb fup",
+                "50mb fup",
+                "100mb fup",
+                "BB Fup for 20mb above",
+                "bb fup for 20mb and above",
+                "FUP for 20 Mbps & Above"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\"><strong>FUP for 20Mbps &amp; Above Packages</strong></span></p><p>&nbsp;</p><ul><li>Usage Limit: 2 TB (2,000 GBs)</li><li>Additional Volume Bucket: 100 GBs for Rs.200</li><li>Additional Buckets Allowed: 25</li><li>Maximum Additional Charges Rs.5,000</li><li>Maximum Ceiling Limit: 25 buckets/2500 GBs</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Free Starzplay SVOD movie bundle to Smart TV/IPTV dormant users",
+            "patterns": [
+                "starzplay svod promo",
+                "starzplay movie bundle offer",
+                "starzplay svod bundle free",
+                "free starzplay svod",
+                "free starzplay bundle for smart tv users",
+                "free starzplay bundle for iptv users",
+                "smart tv dormant users offer"
+            ],
+            "responses": [
+                "<ul><li>Get free Starzplay SVOD movie bundle</li><li>Offer is only for Smart TV/IPTV dormant users</li><li>Validity of promo: 2 months ie (30th Nov 2020)</li><li>Regular price Rs 239.</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Bill payment options",
+            "patterns": [
+                "PTCL Bill payment options",
+                "online bill payment channels",
+                "Digital Channels for bill payment",
+                "How to pay ptcl bill"
+            ],
+            "responses": [
+                "<p>Please choose from below:</p>"
+            ],
+            "choices": [
+                "PTCL Touch App",
+                "EasyPaisa",
+                "JazzCash",
+                "UBL Digital App",
+                "UBL Omni App",
+                "HBL Mobile App",
+                "Bank Al Habib Agile App"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Touch App",
+            "patterns": [
+                "how to pay bill via touch app",
+                "How to make payment via PTCL touch app",
+                "PTCL touch App"
+            ],
+            "responses": [
+                "<li>Pay bill via Dedbite/Credit Card\n<li>Usage Inquiry for Broadband, EVO and Charji\n<li>Fast Online order placement\n<li>Linking of My PTCL Services"
+            ]
+        },
+        {
+            "tag": "EasyPaisa",
+            "patterns": [
+                "How to Pay Your PTCL Bill via Easypaisa",
+                "how to pay bill via easypaisa",
+                "ptcl bill payment via easypaisa",
+                "easypaisa bill"
+            ],
+            "responses": [
+                "<ul><li>Sign In to your EasyPaisa Account</li><li>Enter Your MPIN</li><li>Click on Bill Payment</li><li>Click on Telephone</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "JazzCash",
+            "patterns": [
+                "Pay Your PTCL Bill via JazzCash",
+                "how to pay bills via Jazz Cash account",
+                "JazzCash bill"
+            ],
+            "responses": [
+                "<ul><li>Sign In to your Jazz Cash Account</li><li>Enter Your MPIN</li><li>Click on Pay Bills</li><li>Click on Telephone</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Pay Your PTCL Bill Using UBL Digital App",
+            "patterns": [
+                "Pay Your bill via UBL Digital App",
+                "How to pay bill via UBL mobile app"
+            ],
+            "responses": [
+                "<li>Login In to your UBL Digital App Account\n<li>Click on Payments\n<li>Click on Bill Management"
+            ]
+        },
+        {
+            "tag": "Pay Your PTCL Bill Using HBL Mobile App",
+            "patterns": [
+                "Pay Your PTCL Bill Using HBL Mobile App",
+                "pay bill via HBL app"
+            ],
+            "responses": [
+                "<li>Login your HBL App\n<li>Click on Pay button\n<li>Select Landline Bill"
+            ]
+        },
+        {
+            "tag": "Pay Your PTCL Bill Using Bank Al Habib Agile App",
+            "patterns": [
+                "how to pay bill via bank al habib",
+                "Pay Your PTCL Bill Using Bank Al-Habib  Agile App"
+            ],
+            "responses": [
+                "<p>&bull;Login In to your AL-HABIB Agile App Account<br />&bull;Click on Add Biller<br />&bull;Select PTCL &amp; Landline</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Data Rate Upgrade Process",
+            "patterns": [
+                "Data Rate Upgrade Process",
+                "Change data rate process",
+                "where is data rate upgrade process",
+                "how to change broadband package with help of upgrade process"
+            ],
+            "responses": [
+                "<ul><li>Check Recommended Data Rate</li><li>if Data Available in ICMS</li><li>if Data Not Available in One WIndow</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO 3G Packages",
+            "patterns": [
+                "Wingle packages",
+                "EVO 3G Packages",
+                "Wingle pkgs",
+                "9.3 pkgs"
+            ],
+            "responses": [
+                "<ul><li>10 GB: Rs. 750</li><li>20 GB: Rs. 1000</li><li>30 GB: Rs. 1,250</li><li>50 GB: Rs. 1,500</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-9-3/evo-wingle/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "BB Static IP",
+            "patterns": [
+                "Broadband Static IP",
+                "static ip",
+                "what are static ip charges",
+                "static ip bundle 1 charges",
+                "static ip bundle 4 charges"
+            ],
+            "responses": [
+                "<ul><li>Bundle 1 (IP = 1) MRC 375/Month</li><li>Bundle 4 (IP = 4) MRC 550/Month</li><li>Installation charges Rs.500</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/bb-static-ip/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Fast Path for Online Gamers",
+            "patterns": [
+                "Fast Path for Online Gamers",
+                "how to active fast path",
+                "fast path handling guidelines"
+            ],
+            "responses": [
+                "<li>Sign in to your PTCL Website account\n<li>Select \u201cChange Latency Type\u201d\n<li>Switch on 'Fast Path'"
+            ]
+        },
+        {
+            "tag": "ANNEX M",
+            "patterns": [
+                "ANNEX M",
+                "ANNEX M information",
+                "ANNEX M for ADSL",
+                "how to active annex m",
+                "aanexM",
+                "ANNEXEM"
+            ],
+            "responses": [
+                "<ul><li>\"Annex M\" improves the upload speed</li><li>Available only for ADSL</li><li>Charges = Zero</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/broadband/broadband-packages/annex-m/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Up<li>selling campaigns \u2013 2022",
+            "patterns": [
+                "New CVM offers ",
+                "New broadband upselling offers",
+                "Up<li>selling campaigns <li> 2020"
+            ],
+            "responses": [
+                "<p>If a customer received any promo package text</p><ul><li>Ask the PTCL relevant PTCL #</li><li>Search the number in list</li><li>Upsell the available BB package</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/up-selling-campaigns-2020/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "HD Channels on PTCL Smart TV \u2013 Flash Fiber Users",
+            "patterns": [
+                "hd channels on iptv",
+                "hd channels on ptcl smart tv",
+                "how to watch hd channel on smart tv",
+                "hd channels for gpon users",
+                "HD Channels for smart tv",
+                "hd channels for Flash Fiber users"
+            ],
+            "responses": [
+                "<ul style=\"list-style-type: square;\"><li><p>Watch High-Definition Live TV Channels on PTCL Smart TV by subscribing to HD Pack for no additional cost. Enjoy the following channels in stunning, vivid picture quality and crisp audio.</p><p>&bull;Available for Flash Fiber customers only.<br />&bull;Service Activation is Free of Cost.<br />&bull;Activate this service by calling 1218<br />or&nbsp;<br />&bull;visiting &nbsp;<span style=\"background-color: #fbeeb8;\"><a href=\"http://www.ptcl.com.pk/hd\">www.ptcl.com.pk/hd</a></span></p></li></ul><p>HD Channels List:</p><p>&bull;HUM TV HD<br />&bull;Bol Entertainment HD<br />&bull;Motorvision TV HD<br />&bull;Baby TV HD<br />&bull;DW English HD<br />&bull;Hum News HD<br />&bull;92 News HD<br />&bull;24 Channel HD<br />&bull;GNN HD<br />&bull;Bol News HD</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/hd-channels-on-ptcl-smart-tv-gpon-hsi-users/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CPE Return and Reuse Policy",
+            "patterns": [
+                "CPE Return and Reuse Policy",
+                "Modem return policy",
+                "modem reuse policy",
+                "wifi modem change policy"
+            ],
+            "responses": [
+                "<p>Simplified CPE life policy</p><ul><li>xDSL(ADSL and VDSL) : 2 years</li><li>PON CPE(ONT) : 3 Years</li><li>Applicable for single band and Dual band&nbsp;</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/cpe-return-and-reuse-policy/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Wireless Packages For UMT (University of Management and Technology) Students",
+            "patterns": [
+                "UMT charji pkgs",
+                "Charji UMT Packages",
+                "Wireless Packages For UMT (University of Management and Technology) Students"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">PTCL (Standard Offers By UMT)</p><p style=\"text-align: left;\">Offer-1<br />&bull;Charji in Rs.1000 &nbsp; &nbsp;<br />&bull;75 GB/Month in Rs.1300 &nbsp; &nbsp;</p><p style=\"text-align: left;\">Offer-2<br />&bull;Charji in Rs.1000<br />150 GB/Month in Rs.1550</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/wireless-packages-for-umt/\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji COD (Cash on Delivery) Service",
+            "patterns": [
+                "Charji COD",
+                "Charji Cash on delivery",
+                "charji order via helpline",
+                "how to place charji order via PCRM"
+            ],
+            "responses": [
+                "<ul><li>Get the Charji on your doorstep by ordering it through helpline</li><li>Cash on deliver charges of Rs. 234 apply</li><li>TAT : 48 Hrs (after order confirmation) Click here for more info</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/new-charji-cod-cash-on-delivery/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "DigiSkills EVO and Charji packages by PTCL Digital Services",
+            "patterns": [
+                "digiskills packages",
+                "charji digiskills",
+                " 3g digiskills",
+                " ptcl digiskills pkgs"
+            ],
+            "responses": [
+                "<ul><li>Only available for Dig skills selected students</li><li>Affordable Packages</li><li>Charji/3G device Price: 2500</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/digiskills-evo-and-charji-packages/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "How to check Evo/Charji usage via SMS",
+            "patterns": [
+                "How to check Evo/Charji usage via SMS",
+                "check 3G usage via SMS",
+                "Check charji usage via SMS"
+            ],
+            "responses": [
+                "<p>Check your EVO/Charji Package &amp; usage details on your mobile by simply texting info space MDN or info space CNIC to 0512181218.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/usage-re-sub-via-sms/\" target=\"_blank\" rel=\"noopener\">Click here for more details</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "How to Resubscribe Evo/Charji Package via SMS",
+            "patterns": [
+                "how to resub evo pkg",
+                "how to resub charji pkg",
+                "How to Resubscribe Evo/Charji Package via SMS",
+                "how to resub wireless pkgs via SMS"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div style=\"text-align: left;\">&bull;Send a text message on &ldquo;0512181218&rdquo; to re-subscribe the package.</div><div style=\"text-align: left;\">&bull;Format : &lsquo;&rsquo;Resub &lt;MDN&gt; &rsquo;&rsquo; SMS format is not case sensitive.</div><div style=\"text-align: left;\">&bull; Send message via Registered mobile number</div></div>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/usage-re-sub-via-sms/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Static IP on EVO Postpaid Devices",
+            "patterns": [
+                "Static IP on EVO Postpaid Devices",
+                "Static IP for wireless services",
+                "static ip for evo",
+                "static IP for charji"
+            ],
+            "responses": [
+                "<p>Static IP for Wireless Services</p><ul><li>Only available for 3.1 &amp; 9.3 postpaid customers</li><li>Rs 500 is per month charges.</li><li>No Configuration charges are applied.</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-vas/static-ip-on-evo/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "National Dialing Codes",
+            "patterns": [
+                "National Dialing Codes",
+                "Pakistan cities dialing codes"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/national-codes/\" target=\"_blank\" rel=\"noopener\">Click here to get National Dialing Codes</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "International Dialing Codes",
+            "patterns": [
+                "International Dialing Codes",
+                "worldwide dialing codes"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/international-codes/\" target=\"_blank\" rel=\"noopener\">Click here to get International Dialing Codes</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "INTERNATIONAL TARIFF",
+            "patterns": [
+                "international tariff",
+                "international call charges"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"https://ptcl.com.pk/Informations/InternationalAndDomesticTariffs\" target=\"_blank\" rel=\"noopener\">Click here to get International tariff</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Zone 1 Destinations Tariff",
+            "patterns": [
+                "zone 1 countries",
+                "zone 1 countries call charges",
+                "Zone 1 Destinations Tariff"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"https://ptcl.com.pk/uploads/Zone%201%20Destinations%20v4.pdf\" target=\"_blank\" rel=\"noopener\">Click here to get Zone 1 Destinations Tariff</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "GPON DHA Promotions Sunset\u2013 Aug 2020",
+            "patterns": [
+                "Sunset promo for dha",
+                "New GPON promo for DHA sunset",
+                "Sunset promo for gpon customers",
+                "GPON DHA Sunset promotions"
+            ],
+            "responses": [
+                "<ul><li>GPON 25 Mbps DHA Promo Sunset</li><li>GPON 25 Mbps DHA Promo Sunset</li><li>GPON 4 Mbps DHA Promo Sunset</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/gpon-dha-promos-4-15-25-Mbps-sunset-aug-2020/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Vision",
+            "patterns": [
+                "what is ptcl vision",
+                "PTCL Vision"
+            ],
+            "responses": [
+                "<p>PTCL Vision To be the leading and most admired Telecom and ICT provider in and for Pakistan.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Mission",
+            "patterns": [
+                "PTCL Mission",
+                "What is PTCL vision"
+            ],
+            "responses": [
+                "<p>PTCL Mission</p><ul><li>To be the partner of choice for our customers, to develop our people and to deliver value to our shareholders.</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PTCL Core Values",
+            "patterns": [
+                "PTCL Corporate Values",
+                "PTCL Core Values"
+            ],
+            "responses": [
+                "<p>PTCL Core Values</p><ul><li>We Care</li><li>We Put Customers First</li><li>We Work as One Team</li><li>We Embrace ChangeClick here for more info</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Corded & Cordless Phones",
+            "patterns": [
+                "cordless phone set",
+                "corded phone set",
+                "How to get new telephone set?",
+                "ptcl telephone set",
+                "Is PTCL providing phone set to customers?",
+                "Corded & Cordless Phones"
+            ],
+            "responses": [
+                "<p>PTCL brings you a wide selection of phones to select from that best fit your needs</p><ul><li>Crystal</li><li>clear voice quality,</li><li>Caller ID,</li><li>Answering machine and many more features.&nbsp;</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/corded-and-cordless-phones/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Multiple IPTV on VDSL",
+            "patterns": [
+                "multiple smart tv on vdsl",
+                "Additional smart tv on vdsl",
+                "Additional IPTV on vdsl",
+                "Multiple IPTV on VDSL"
+            ],
+            "responses": [
+                "<p>Multiple IPTV on VDSL</p><ul><li>2 Additional IPTVs can be subscribed as VAS on vDSL</li><li>Additional IPTV 1 MRC Rs: 450/month</li><li>Additional IPTV 2 MRC Rs 450/month&nbsp;</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/multiple-iptv-on-vdsl/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Multiple IPTV ON Flash Fiber (HSI)",
+            "patterns": [
+                "Additional Smart tv on GPON HIS",
+                "Additional IPTV on GPON HIS",
+                "Multiple Smart tv ON GPON (HSI)",
+                "Multiple IPTV ON GPON (HSI)"
+            ],
+            "responses": [
+                "<ul><li>3 Additional IPTVs can be subscribed on GPON HSI</li><li>Additional IPTV 1 MRC Rs: 450/month</li><li>Additional IPTV 2 MRC Rs 450/month</li><li>Additional IPTV 3 MRC Rs 450/month</li><li>STB will be given free.&nbsp;</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/smart-tv/smart-tv/multiple-stb-for-flash-fiber/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PCPMs",
+            "patterns": [
+                "pcpms locations",
+                "where is my nearest PCPM",
+                "PCPMs addresses",
+                "PCPMS list",
+                "PCPMs"
+            ],
+            "responses": [
+                "<p>Public Cash Payment Machines (PCPMs) are installed at PTCL Shops for Bill Payment.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/pcpm-for-bill-payment/\" target=\"_blank\" rel=\"noopener\">Click here to get PCPMs locations</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "How to change EVO/Charji Package <li> Prepaid",
+            "patterns": [
+                "how to change charji prepaid pkg",
+                " how to change evo prepaid pkg",
+                " how to change charji prepaid package",
+                "How to change evo prepaid package"
+            ],
+            "responses": [
+                "<li>Change the package in One Window\n<li>If package has been changed, then generate QKill SR in CRM\n<li>If unable to change the package from One Window then generate Complaint in CRM."
+            ]
+        },
+        {
+            "tag": "How to change EVO/Charji Package <li> Prepaid",
+            "patterns": [
+                "how to change charji prepaid pkg",
+                " how to change evo prepaid pkg",
+                " how to change charji prepaid package",
+                "How to change evo prepaid package"
+            ],
+            "responses": [
+                "<ul><li>Change the package in One Window</li><li>If package has been changed, then generate QKill SR in CRM</li><li>If unable to change the package from One Window then generate SR in CRM as per shared guidelines.</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "How to change EVO/Charji Package Postpaid",
+            "patterns": [
+                "how to change charji postpaid pkg",
+                "how to change evo postpaid pkg",
+                "how to change charji postpaid pacakge",
+                "how to change evo postpaid package"
+            ],
+            "responses": [
+                "<p>Rights Availability for Package change;</p><table style=\"border-collapse: collapse; width: 99.9311%; height: 528.926px;\" border=\"1\"><tbody><tr style=\"height: 39.1797px;\"><td style=\"width: 35.6822%; height: 39.1797px;\"><span style=\"background-color: #fbeeb8;\">Package Change</span></td><td style=\"width: 35.9505%; height: 39.1797px;\"><span style=\"background-color: #fbeeb8;\">Conditions</span></td><td style=\"width: 28.4385%; height: 39.1797px;\"><span style=\"background-color: #fbeeb8;\">Package Change via</span></td></tr><tr style=\"height: 137.129px;\"><td style=\"width: 35.6822%; height: 137.129px;\">Prepaid to prepaid&nbsp;</td><td style=\"width: 35.9505%; height: 137.129px;\">Any time&nbsp;</td><td style=\"width: 28.4385%; height: 137.129px;\">One Window. But register in case Call<br />Center not able to change package</td></tr><tr style=\"height: 97.9492px;\"><td style=\"width: 35.6822%; height: 97.9492px;\">Prepaid to postpaid</td><td style=\"width: 35.9505%; height: 97.9492px;\">Any time except first<br />37 days of Sale</td><td style=\"width: 28.4385%; height: 97.9492px;\">Need to register SR in CRM for<br />package change&nbsp;</td></tr><tr style=\"height: 117.539px;\"><td style=\"width: 35.6822%; height: 117.539px;\">Postpaid to prepaid</td><td style=\"width: 35.9505%; height: 117.539px;\">Within first 7 Days of<br />the Month and after<br />37 days of new sale&nbsp;</td><td style=\"width: 28.4385%; height: 117.539px;\">Need to register SR in CRM for<br />package change&nbsp;</td></tr><tr style=\"height: 137.129px;\"><td style=\"width: 35.6822%; height: 137.129px;\">Postpaid to<br />postpaid&nbsp;</td><td style=\"width: 35.9505%; height: 137.129px;\">Any time except first<br />37 days of Sale&nbsp;</td><td style=\"width: 28.4385%; height: 137.129px;\">One Window. but register in case Call<br />Center not able to change package</td></tr></tbody></table>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "How to change Wifi Modem",
+            "patterns": [
+                "change wifi modem process",
+                "change wifi modem",
+                "How to Change Wifi modem"
+            ],
+            "responses": [
+                "<p>How to Change Wifi modem customer is facing coverage/WiFi signal range issue then</p><ul><li>Guide customer to use within 20 meters radius</li><li>In open spaces and away from wallsIf still extension in the range is required</li><li>Provide information of WiFi extenders like TPLink &amp; DLink If facing any technical issue then after troubleshooting/probing Create below SR in CRM</li><li>For GPON ONT: GPON Technical &gt; GPON &gt; ONT OFF ONT/Adapter Faulty</li><li>For WiFi Modem: Broadband Technical &gt; Broadband &gt; Modem OFF CPE/Adapter Faulty</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "D Link Wi Fi Range Extenders",
+            "patterns": [
+                "dlink wifi range extenders",
+                "wifi extendaers dlink",
+                "dlink wifi range"
+            ],
+            "responses": [
+                "<p>Please take order request for DLink Wifi Extender in One WIndow</p><ul><li>Customer will receive a confirmation call within 24 hours</li><li>72 hours TAT</li><li>Cash on Delivery charges Rs.250/each WiFi Extender will apply</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/extend-your-wifi-d-link/\" target=\"_blank\" rel=\"noopener\">Click here for more info&nbsp;</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TP<li>Link Wi<li>Fi Range Extenders.",
+            "patterns": [
+                "tp<li>Link Wi<li>Fi Range Extenders",
+                "wifi extender tp link",
+                "tplink wifi range extenders"
+            ],
+            "responses": [
+                "<p>Please take order request for TPLink Wifi Extender in One Window</p><ul><li>Customer will receive confirmation call within 24 hours</li><li>72 hours TAT</li><li>Cash on Delivery charges Rs.250/each WiFi Extender will apply</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji Complaint Handling",
+            "patterns": [
+                "Charji Complaint handling",
+                " EVO Charji Complaint Handling"
+            ],
+            "responses": [
+                "<p>Please choose from below</p>"
+            ],
+            "choices": [
+                "EVO/Charji Slow Browsing / Downloading",
+                "EVO/Charji Frequent Disconnection FDC",
+                "EVO/Charji No Signal Issue",
+                "EVO/Charji No Browsing",
+                "EVO/Charji Balance Lost"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji Slow Browsing / Downloading",
+            "patterns": [
+                "EVO Slow Browsing",
+                "Charji Slow Browsing",
+                "EVO/Charji Slow Browsing",
+                "EVO/Charji Slow Browsing / Downloading"
+            ],
+            "responses": [
+                "<ul><li>Check Device status</li><li>Device Abnormal Behavior</li><li>Ask Customer if he is getting slow browsing on specific website</li><li>Check the signal status</li><li>Ask customer to check the connectivity mode</li><li>Ask customer if he/she Facing Issue Regularly</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji Frequent Disconnection FDC",
+            "patterns": [
+                "EVO/Charji Frequent Disconnection <li> FDC",
+                "EVO/Charji FDC",
+                "evo fdc issue",
+                "charji fdc issue"
+            ],
+            "responses": [
+                "<p>EVO/Charji Frequent Disconnection &ndash; FDC</p><p>Ask from Customer, if he is getting Frequent Disconnection at All Locations or in specific Location.</p><ul><li>Check Coverage</li><li>Ask customer if he is facing issue regularly or only currently at this time</li><li>Check Device status</li><li>Device Abnormal Behavior</li><li>Check for WiFi Issue if customer using WiFi Device</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji No Signal Issue",
+            "patterns": [
+                "Charji No signal issue",
+                "evo no signal issue",
+                "EVO/Charji No Signal Issue"
+            ],
+            "responses": [
+                "<p>Check Coverage</p><ul><li>Ask customer if he is facing issue regularly or only currently at this time</li><li>If regularly then check device Abnormal Behavior</li><li>Restart the deviceIf issue not resolved then</li><li>Ask from customer if he is getting No Signal in All Locations or in specific Location</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji No Browsing",
+            "patterns": [
+                "evo no browsing issue",
+                "Charji no browsing issue",
+                "EVO/Charji No Browsing"
+            ],
+            "responses": [
+                "<p>EVO/Charji No Browsing:Ask Customer if he is getting No browsing on specific website.</p><ul><li>Check from Heat Maps if user is in our coverage area</li><li>Check the signal status</li><li>Check Device status</li><li>Device Abnormal Behavior</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO/Charji Balance Lost",
+            "patterns": [
+                "EVO/Charji Balance Lost",
+                "Evo balance lost",
+                "charji balance lost",
+                "evo blnc lost",
+                "charji blnc lost"
+            ],
+            "responses": [
+                "<p>EVO/Charji Balance Lost</p><ul><li>Verify the MDN from customer thought CNIC or ICCID</li><li>Must cross verify the MDN through ICCID to check same device SIM is used by customer or not.</li><li>Check Profile on EVO AAA</li><li>If customer complaining that unable to use EVO/CHARJI after recharge of amount then check current balance in PCRM &amp; OCS through Query Cash Recharge Log</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Billing Adjustments",
+            "patterns": [
+                "bill adjustment",
+                "Billing adjustment process"
+            ],
+            "responses": [
+                "<p>Please choose from below</p>"
+            ],
+            "choices": [
+                "Archive Not Deployed-PSTN",
+                "Archive Not Deployed-BB",
+                "Archive Not Deployed-IPTV",
+                "Due to service issue-PSTN",
+                "Due to service issue-BB",
+                "Due to service issue-IPTV",
+                "VAS-PSTN/BB/IPTV etc"
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Archive Not Deployed of Broadband Services",
+            "patterns": [
+                "Archive Not Deployed of Broadband Services",
+                "bb not deployed adjustment issue",
+                "Archive Not Deployed-BB"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Complaint Types: &nbsp;Archive Not Deployed of Broadband Services</p><p style=\"text-align: left;\">&bull;Scenario # 1: If there is no usage on the BB Usage portal<br />&bull;Scenario # 2 If there is difference in first usage date in BB Usage Portal and the date of installation of BB in CRM</p><p style=\"text-align: left;\">--------------------</p><p style=\"text-align: left;\">&nbsp;</p><p><span style=\"background-color: #fbeeb8;\">Verifications:</span></p><p>&bull;Check if the same customer has already been provided adjustment for the same claim or not?<br />&bull;Check usage logs through BB Usage Portal<br />&bull;Check CPE<br />&bull;Usage on the bill<br />&bull;Installation date in CRM</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"&lt;p&gt;&lt;a%20href=&quot;http:/10.192.5.15/ib/billing-adjustment-process-1/&quot;%20target=&quot;_blank&quot;%20rel=&quot;noopener&quot;&gt;Click%20here%20for%20more%20info&lt;/a&gt;&lt;/p&gt;\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Archive Not Deployed-IPTV Adjustment",
+            "patterns": [
+                "iptv archived but not deployed bill adjustment",
+                "Archive Not Deployed-IPTV Adjustment",
+                "Archive Not Deployed-IPTV"
+            ],
+            "responses": [
+                "<p>Complaint Types:<span style=\"background-color: #fbeeb8;\"> Archive Not Deployed of IPTV Services</span></p><p>Scenario # 1:<br />If there is service archived in CRM but customer insists that service is not provided</p><p>Verifications:<br />&bull;Check installation date in CRM<br />&bull;Amount charged in first bill</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Due to service issue-PSTN Adjustment",
+            "patterns": [
+                "bill adjustment for pstn service issue",
+                "Due to service issue-PSTN Adjustment",
+                "Due to service issue-PSTN"
+            ],
+            "responses": [
+                "<p>Complaint Types: Due to service issue-PSTN Adjustment</p><p><strong><span style=\"background-color: #fbeeb8;\">&bull;Scenario # 1:</span></strong><br />If there is no call record found in RMS and technical complaint found in CRM</p><p><strong><span style=\"background-color: #fbeeb8;\">&bull;Scenario # 2:</span></strong><br />If there is no call record found in RMS and no technical complaint is found in CRM</p><p><strong><span style=\"background-color: #fbeeb8;\">&bull;Scenario # 3:</span></strong><br />If there is call record found in RMS whether technical complaint is found in CRM or not</p><p>&nbsp;</p><p><span style=\"background-color: #fbeeb8;\"><strong>Verifications</strong></span></p><p>&bull;Check call details through RMS<br />&bull;Check CRM technical complaints</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Due to service issue \u2013 Broadband Adjustments",
+            "patterns": [
+                "Broadband adjustment due to service issue",
+                "Due to service issue - Broadband Adjustments",
+                "Due to service issue - BB",
+                "Due to service issue-BB"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Complaint Types: Due to service issue &ndash; Broadband Adjustments</p><p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Scenarios # 1:</span><br />If there is no usage found in BB Usage portal and technical complaints are found in CRM</p><p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Scenario # 2:</span><br />If there is FDC (Frequent disconnection) found in BB usage portal (Sessions ,30 min), Also consult line stability to establish line issues</p><p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Scenario # 3:</span><br />If there is no usage found or there is slow browsing or bad service and there are no complaints in the system</p><p style=\"text-align: left;\">-----------------------</p><p><span style=\"background-color: #fbeeb8;\">Verifications&nbsp;</span></p><p>&bull;Check CRM technical complaints<br />&bull;Usage logs in BB Usage Portal/ Support Console<br />&bull;Motive line Stability (as a check only)&nbsp;<br />&bull;Port Profile Check using support console</p><p style=\"text-align: left;\">&nbsp;</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Due to service issue IPTV Adjustment ",
+            "patterns": [
+                "Due to service issue-IPTV Adjustment",
+                "iptv adjustment due to service issue",
+                "Due to service issue-IPTV"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Complaint Types: <span style=\"background-color: #fbeeb8;\">Due to service issue-IPTV Adjustment&nbsp;</span></p><p style=\"text-align: left;\">Scenario # 1:<br />If there are technical complaints in CRM</p><p style=\"text-align: left;\">Scenario # 2:<br />If there are no technical complaints in CRM</p><p style=\"text-align: left;\">Verifications:<br />&bull; Check SLCS for VOD related complaints</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "VAS-PSTN/BB/IPTV etc. Adjustment",
+            "patterns": [
+                "VASPSTN/BB/IPTV etc. AdjustmentPSTN VAS adjustmentBB VAS Adjustment",
+                "PSTN VAS adjustment",
+                "BB VAS Adjustment",
+                "VAS-PSTN/BB/IPTV etc. Adjustment"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Complaint Types: VAS-PSTN/BB/IPTV etc. Adjustment</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">Scenario # 1:<br />If VAS activated in CRM but not assigned to customer provide adjustment</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">Verifications:<br />&bull;Check from CRM and RS</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bill paid/forced closed Resatoration",
+            "patterns": [
+                "forced closed restoration",
+                "Bill paid/forced closed restoration",
+                "Bill paid/forced closed"
+            ],
+            "responses": [
+                "<p>Bill paid/forced closed - Resatoration</p><p>Please create below SR in CRM</p><p>&bull;SR Category: Services Restoration<br />&bull;SR Type: Restoration After Temporary Closure<br />&bull;Sub Type: Services Temporarily Closed-Forced Closed</p><p>CCR will guide the customer that services will be restored in 24 working hours maximum.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "If Bill Not Paid Restoration Required",
+            "patterns": [
+                "bill not paid but restoration required",
+                "If Bill Not Paid Restoration",
+                "If Bill Not Paid"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">If Bill Not Paid - Restoration&nbsp;</p><p style=\"text-align: left;\">&bull;If customers services are suspended due to non-payment and customer promise that he will clear<br />dues shortly and wants to restore services on call</p><p style=\"text-align: left;\">&bull;Then CCR will guide the customer to pay their bill at earliest and also restore customer&rsquo;s services on promissory Note.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bill paid but Not updated \u2013 Restoration",
+            "patterns": [
+                "bill paid but not updated in RMS <li> Restoration",
+                "Bill paid but Not updated",
+                "Bill paid but Not updated <li> Restoration"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Bill paid but Not updated &ndash; Restoration</p><p style=\"text-align: left;\">&bull;Check the payment status in RMS<br />&bull;Check number status from CRM<br />&bull;Billing Experts will restore customers Services on Promissory Note in RMS</p><p style=\"text-align: left;\">&bull;Customer can avail this option ONLY one time during the suspension period of non-payment.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bill paid & updated restoration",
+            "patterns": [
+                "Bill paid & updated in RMS but not restored",
+                "Bill paid & updated restoration required",
+                "Bill paid & updated"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Bill paid &amp; updated - Restoration</p><p style=\"text-align: left;\">&bull;Contact Center Layer-I will check payment record in RMS,&nbsp;<br />&bull;if paid amount is updated in RMS&nbsp;<br />&bull;And Services are still suspended in CRM.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bill Installment",
+            "patterns": [
+                "Bill Installment",
+                "wireline billing installment",
+                "installment request"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Bill installment - If Number Status is Active</span></p><p style=\"text-align: left;\">&bull;Check the payment history of the customer From RMS<br />&bull;If customer paid partial bill in last Six Months&nbsp;<br />&bull;Offer only Two Installments</p><p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Bill installment - If Number Status is suspended</span></p><p style=\"text-align: left;\">&bull;If services are suspended due to non-payment and customer also wants to restore his services then<br />&bull;First installment should be of at least 50%<br />&bull;The balance amount can be divided in upto three installments</p><p style=\"text-align: left;\">&bull;Services will be auto-restored once payment of first installment is received in system</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR Required By Email",
+            "patterns": [
+                "CDR by email",
+                "CDR Required By Email"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">If Customer Call from Other CLI to get CDR by email then request the customer to call from same number against which CDR is required.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR Required By Post",
+            "patterns": [
+                "CDR by post required",
+                "CDR Required By Post"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">CDR Required By Post</p><p style=\"text-align: left;\">&bull;If customer does not have an Email ID and wants us to dispatch CDRs via post<br />&bull;Then follow mentioned below steps:<br />&bull;CCR will verify that customer is calling from same CLI.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR by Self Care Apps",
+            "patterns": [
+                "CDR by SelfCare Appscdr by ptcl touch appcdr by ptcl website",
+                "cdr by ptcl touch app",
+                "cdr by ptcl website",
+                "CDR by Self-Care Apps"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">CDR by Self-Care Apps</p><p style=\"text-align: left;\">&bull;Guide customer to register account on PTCL website or&nbsp;<br />&bull;PTCL Touch App by providing the required information.&nbsp;</p><p style=\"text-align: left;\">After account registration customer can extract/ check call details</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR For Corp Customer",
+            "patterns": [
+                "CDR For Corp Customer",
+                "CDR For Corporate Customer"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">CDR For Corp Customer</p><p style=\"text-align: left;\">&bull;Corporate customers will be asked to send us email on care@ptcl.net.pk for CDR&nbsp;</p><p style=\"text-align: left;\">&bull;Proper particulars of sender i.e. Name, Designation &amp; Contact number requested.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR by Email TAT",
+            "patterns": [
+                "CDR by Email TAT"
+            ],
+            "responses": [
+                "Provide Two Hours TAT to customer for CDR by Email"
+            ]
+        },
+        {
+            "tag": "CDR by Post TAT",
+            "patterns": [
+                "CDR by Post TAT",
+                "what is the TAT Of CDR by post"
+            ],
+            "responses": [
+                "Communicate customer 3 Working Days TAT for CDR by Post"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Ebill Not Delivered",
+            "patterns": [
+                "bill by email not received",
+                "Ebill Not Delivered"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Ebill Not Delivered</p><p style=\"text-align: left;\">If customer says that e-bill is not received on their email ID then CCR will check and confirm below points from CRM and customer</p><p style=\"text-align: left;\">1.Correct Email ID is updated in CRM<br />2.Ask customer to check their Junk/Spam Folder of email box.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Payment Realization Issue",
+            "patterns": [
+                "Bill Paid Against Another Number",
+                "Paid but not Reflected in System",
+                "Paid but Charged Again-Payment not Punched",
+                "Wrong Punching/Adjustment Issue",
+                "Timely Paid But Charged Again  bill",
+                "Timely Paid But Charged Again   bill",
+                "Payment Realization Issue"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Payment Realization Issue</span></p><p style=\"text-align: left;\">&bull;All payments related complaints where customer paid their bill not updated in RMS or&nbsp;<br />&bull; incorrect updated, will now be handled under NEW Complaint Category &ldquo;Payment Realization Issues&rdquo;</p><p>&nbsp;</p><p><span style=\"background-color: #fbeeb8;\">Example Scenario:</span></p><p>&bull;SR Category: Payment Realization Issue<br />&bull;SR Type: HBL Express<br />&bull;Description: Payment related issue in HBL Mobile App or HBL Konnect should be<br />logged under complaint type &ldquo;HBL Express&rdquo;</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Billing complaint handling SOP",
+            "patterns": [
+                "bill complaint handling",
+                "Billing complaint handling SOP"
+            ],
+            "responses": [
+                "<p>Please choose from below</p>"
+            ],
+            "choices": [
+                "Payment Realization Issue",
+                "Bill Installment",
+                "CDR",
+                "Ebill Not Delivered",
+                "WHT Required"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "With Holding Tax Statement/Certificate",
+            "patterns": [
+                "Withholding Tax Certificate required",
+                "Withholding Tax Statement required",
+                "WHT Required",
+                "WHT"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">For Withholding Tax Statement/Certificate, Layer-I CCR will create SR in CRM by selected&nbsp;</p><p style=\"text-align: left;\">&bull;&ldquo;SR Category&rdquo; as &ldquo;Billing Request&rdquo;&nbsp;<br />&bull;Type as &ldquo;Withholding Tax Statement&rdquo;&nbsp;<br />&bull;&ldquo;Sub Type&rdquo; as &ldquo;Withholding Tax Statement Required&rdquo;</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "SMP Guidelines and Manual",
+            "patterns": [
+                "SMP Guidelines and Manual",
+                "SMP Handling",
+                "SMP manuals"
+            ],
+            "responses": [
+                "<p>Click here to get SMP handling guidelines and more info</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/process-manuals-guidelines/\" target=\"_blank\" rel=\"noopener\">Click here to get SMP handling guidelines and more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Important Billing Dates",
+            "patterns": [
+                "bill run dates",
+                "what are BILL RUN dates",
+                "important billinng dates",
+                "billing cutt off date"
+            ],
+            "responses": [
+                "<table style=\"border-collapse: collapse; width: 99.9107%;\" border=\"1\"><tbody><tr><td style=\"width: 41.1659%;\" width=\"293\"><p><span style=\"background-color: #f1c40f;\"><strong>Description</strong></span></p></td><td style=\"width: 31.2108%;\" width=\"194\"><p><span style=\"background-color: #f1c40f;\"><strong>1st Billing Cycle (Calendar Month)</strong></span></p></td><td style=\"width: 27.1749%;\" width=\"184\"><p><span style=\"background-color: #f1c40f;\"><strong>2nd Billing Cycle (Mid Month)</strong></span></p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>Billing Cycle Dates</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>1<sup>st</sup> to end of month</p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>16<sup>th</sup> to 15<sup>th</sup></p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>Bill Generation Dates</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>3<sup>rd</sup> or 4<sup>th </sup>every month</p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>18<sup>th</sup> or 19<sup>th </sup>every month</p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>Cutoff date (Date when all bills are delivered)</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>14<sup>th</sup></p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>28<sup>th</sup></p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>Cutoff Period (Bill Delivery Process Time)</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>4<sup>th</sup> to 14<sup>th</sup></p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>18<sup>th</sup> to 28<sup>th</sup></p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>TAT Bill by Post</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>4 working days</p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>4 working days</p></td></tr><tr><td style=\"width: 41.1659%;\" width=\"293\"><p>TAT Bill by Email</p></td><td style=\"width: 31.2108%;\" width=\"194\"><p>2 Hours</p></td><td style=\"width: 27.1749%;\" width=\"184\"><p>2 Hours</p></td></tr></tbody></table><p style=\"text-align: left;\">&nbsp;</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji Warranty Claim",
+            "patterns": [
+                "how to claim charji warrenty",
+                "Charji Warranty Claim"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Charji warranty covers:</span></p><p style=\"text-align: left;\">&bull;The warranty covers any hardware/software issues experienced during the 1-year period commencing from date of sale.<br />&bull;CharJi Devices are accompanied with 1 Year warranty period.</p><p style=\"text-align: left;\">----------------------------------</p><p><span style=\"background-color: #fbeeb8;\">Charji warranty does not cover:</span></p><p>&bull;Accessories<br />&bull;Physical/Liquid damage<br />&bull;A device has previously been repaired by a non-authorized repair center/person.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/charji-warranty-claim/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bill collection via Bykea",
+            "patterns": [
+                "how to pay bill via bykea",
+                "Pay bill via Bykea",
+                "Bill collection via Bykea"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Bill collection via Bykea</span></p><p>Customers can now also pay their PTCL bill using BYKEA bill collection service.</p><p>Services Areas/Cities:<br />&nbsp;<br />&bull;Lahore<br />&bull;Karachi<br />&bull;Islamabad<br />&bull;Rawalpindi</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/ptcl-bill-collection-via-bykea/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "EVO Heat Maps",
+            "patterns": [
+                "where is evo heat map",
+                "3g heat maps",
+                "evo heat maps"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-others/evo-coverage-areas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Charji Heat Maps",
+            "patterns": [
+                "4G heat maps",
+                "charji heat maps",
+                "Where is Charji heat maps"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/evo/evo-others/evo-coverage-areas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "order placement helpline",
+            "patterns": [
+                "order placement helpline"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Order placement helpline</span> =1218 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "complaint helpline",
+            "patterns": [
+                "complaint helpline"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Complaint helpline</span> = 1218 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "sme helpline",
+            "patterns": [
+                "sme helpline"
+            ],
+            "responses": [
+                "<p>0800-80808 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Calling Card helpline",
+            "patterns": [
+                "Calling Card helpline"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Calling Card helpline</span> = 0800-80808 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Coorporate helpline",
+            "patterns": [
+                "coorporate helpline"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Coorporate helpline</span> =111-202-020 (1.20/Min)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Coorporate complaint helpline",
+            "patterns": [
+                "coorporate complaint helpline"
+            ],
+            "responses": [
+                "<p>Coorporate complaint helpline =1260 (free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Retailer helpline",
+            "patterns": [
+                "retailer helpline",
+                "Retailer helpline",
+                "80044555",
+                "0800-44555"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Retailer helpline </span>= 0800-44555</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "directory helpline",
+            "patterns": [
+                "directory helpline",
+                "Directory helpline",
+                "1217"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Directory helpline </span>= 1217 (Rs.3 per Call (Call = 3 minutes)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "billing info helpline",
+            "patterns": [
+                "billing info helpline",
+                "Billing info helpline",
+                "1200"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Billing info helpline</span> =1200 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "pcpm helpline",
+            "patterns": [
+                "pcpm helpline"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">PCPM helpline</span> = 0800-19191(Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "employee helpline",
+            "patterns": [
+                "employee helpline",
+                "Employee helpline"
+            ],
+            "responses": [
+                "<p>Employee helpline =0800-19191(Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "archival helpline",
+            "patterns": [
+                "archival helpline",
+                "Archival helpline"
+            ],
+            "responses": [
+                "<p>Archival helpline = 0800-00789 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "To Update Directory Inquiry helpline",
+            "patterns": [
+                "To Update Directory Inquiry helpline"
+            ],
+            "responses": [
+                "<p>To Update Directory Inquiry helpline = 0800-01217 (Free)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "pta helpline",
+            "patterns": [
+                "pta helpline",
+                "PTA",
+                "PTA helpline"
+            ],
+            "responses": [
+                "<p>PTA helpline: <strong>0800-55055</strong></p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "for ntc 92 Information Website",
+            "patterns": [
+                "for ntc 92 Information Website"
+            ],
+            "responses": [
+                "www.ntc.net.pk"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "ntc helpline",
+            "patterns": [
+                "ntc helpline",
+                "NTC helpline"
+            ],
+            "responses": [
+                "19161218 ( For Complaint of GOVT # (If dialing Through PSTN) 1218 (For Complaint of GOVT #If Dialling Through NTC)"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "retention helpline",
+            "patterns": [
+                "retention helpline",
+                "Retention helpline "
+            ],
+            "responses": [
+                "<p>Retention helpline = 0800-00789 (Option # 3 Only whitelisted PTCL Shop)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom 500",
+            "patterns": [
+                "what are the features of freedom 500",
+                "is 200 mobile minutes are free in freedom 500?",
+                "freedom500",
+                "Freedom 500"
+            ],
+            "responses": [
+                "<div class=\"km-conversation-container-right \"><div class=\"mck-msg-box vis km-custom-widget-background-color-secondary\"><div class=\"move-right mck-msg-text\"><span style=\"background-color: #fbeeb8;\">Freedom 500</span></div><div class=\"move-right mck-msg-text\">&nbsp;</div><div class=\"move-right mck-msg-text\">&bull;Unlimited On-Net Calls</div><div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div>&bull;200 mobile calling minutes</div><div>&bull;Free VAS Bundle</div><div>&bull;No Line Rent</div><div>&bull;Charges Rs. 500/month</div></div></div></div>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ]
+        },
+        {
+            "tag": "1218 and 1236 Helpline",
+            "patterns": [
+                "1218",
+                "dial 1218",
+                "call 1218",
+                "1236"
+            ],
+            "responses": [
+                "The system does not support the call feature at the moment, please call using your mobile phone or landline."
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Exchange Request",
+            "patterns": [
+                "Exchange"
+            ],
+            "responses": [
+                "Exchange locator has not been linked to the system yet. This feature is under development"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "GPON - FTTH Services",
+            "patterns": [
+                "What is GPON",
+                "GPON HSI"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div>GPON is a FTTH (fiber to the home) technology and it's brand name is Flash Fiber</div><br /><div>Click the below button to get Flash packages details</div></div>"
+            ],
+            "choices": [
+                "Flash Fiber Packages"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom 3000",
+            "patterns": [
+                "Freedom 3000",
+                " What are the charges of Freedom 3000",
+                " freedom3000"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Freedom 3000</span></p><ul><li>Unlimited On-Net Calls</li><li>2,000 mobile calling minutes</li><li>200 International calling minutes</li><li>Free VAS Bundle</li><li>No Line Rent</li><li style=\"text-align: left;\">Charges Rs. 3,000/month</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom 1000",
+            "patterns": [
+                "Freedom 1000",
+                "what are the charges of Freedom 1000",
+                "freedom100",
+                "freedom1000"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div><span style=\"background-color: #fbeeb8;\">Freedom 1000</span></div><div>&nbsp;</div><div>&bull;Unlimited On-Net Calls</div><div>&bull;700 mobile calling minutes</div><div>&bull;200 International calling minutes</div><div>&bull;Free VAS Bundle</div><div>&bull;No Line Rent</div><div>&bull;Charges Rs. 1,000/month</div></div>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom 5000",
+            "patterns": [
+                "Freedom 5000",
+                " What are the charges of Freedom 5000",
+                " freedom5000"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Freedom 5000</span></p><ul><li>Unlimited On-Net Calls</li><li>4,000 mobile calling minutes</li><li>400 International calling minutes</li><li>Free VAS Bundle</li><li>No Line Rent</li><li>Charges Rs. 5,000/month</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p class=\"MsoNormal\"><span lang=\"EN-US\"><a href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\"><span style=\"font-size: 10.5pt; line-height: 107%; font-family: 'Helvetica',sans-serif; background: #B4D7FF;\">Click here for more info</span></a></span></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Freedom 8000",
+            "patterns": [
+                "Freedom 8000",
+                " what are the charges of Freedom 8000",
+                " freedom8000"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">Freedom 8000</span></p><ul><li>Unlimited On-Net Calls</li><li>8,000 mobile calling minutes</li><li>800 International calling minutes</li><li>Free VAS Bundle</li><li>No Line Rent</li><li>Charges Rs. 8,000/month</li></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><span lang=\"EN-US\" style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Calibri',sans-serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\"><a href=\"http://10.192.5.15/ib/new-pstn-packages/\" target=\"_blank\" rel=\"noopener\"><span style=\"font-size: 10.5pt; line-height: 107%; font-family: 'Helvetica',sans-serif; background: #B4D7FF;\">Click here for more info</span></a></span></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/Abbreviated Dialing",
+            "patterns": [
+                "Abbreviated Dialing",
+                "abrevi",
+                "abbre",
+                "Speed dialing"
+            ],
+            "responses": [
+                "<div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div style=\"text-align: left;\">Abbreviated Dialing</div><br /><div style=\"text-align: left;\">Now you can register up to 10 numbers to be associated with a single-digit number. Simply dial that digit to get the desired number.</div><div style=\"text-align: left;\">&nbsp;</div><div><table style=\"border-collapse: collapse; width: 99.8954%; height: 97.9689px; background-color: #ffffff; border-color: #2dc26b; border-style: dotted;\" border=\"1\"><tbody><tr style=\"height: 39.1875px;\"><td style=\"width: 49.8688%; height: 39.1875px;\"><span style=\"background-color: #fbeeb8;\">Activation code</span></td><td style=\"width: 49.8688%; height: 39.1875px;\"><div style=\"text-align: left;\">*51*Key Digit*num#</div><div style=\"text-align: left;\">e.g. *51*1*0212254155#</div></td></tr><tr style=\"height: 19.5938px;\"><td style=\"width: 49.8688%; height: 19.5938px;\"><span style=\"background-color: #fbeeb8;\"><span style=\"background-color: #fbeeb8;\">Deactivation code:</span></span></td><td style=\"width: 49.8688%; height: 19.5938px;\"><div style=\"text-align: left;\">#51#</div></td></tr><tr style=\"height: 19.5938px;\"><td style=\"width: 49.8688%; height: 19.5938px;\"><span style=\"background-color: #fbeeb8;\"><span style=\"background-color: #fbeeb8;\"><span style=\"background-color: #fbeeb8;\">Activation Procedure</span></span></span></td><td style=\"width: 49.8688%; height: 19.5938px;\"><div style=\"text-align: left;\">On Call</div></td></tr><tr style=\"height: 19.5938px;\"><td style=\"width: 49.8688%; height: 19.5938px;\"><span style=\"background-color: #fbeeb8;\"><span style=\"background-color: #fbeeb8;\"><span style=\"background-color: #fbeeb8;\">Charges</span></span></span></td><td style=\"width: 49.8688%; height: 19.5938px;\"><div style=\"text-align: left;\">Rs.55/Month</div></td></tr></tbody></table></div><div style=\"text-align: left;\">&nbsp;</div><div><div class=\"mck-msg-text mck-msg-content notranslate\" tabindex=\"-1\"><div style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Customer need to dial **</span></div><div style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">at the start to dial a specific number</span></div><div style=\"text-align: left;\">(e.g. **1, **2, **3)</div><br /><div style=\"text-align: left;\">&nbsp;</div></div></div></div>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\"><span style=\"background-color: #c2e0f4;\">Click here for more info</span></a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/Call Transfer (Immediately)",
+            "patterns": [
+                "Call Transfer (Immediately)",
+                "Call Transfer (Immediate)",
+                "Call transfer imme",
+                "Call Forwarding Imme",
+                "Call Forwarding (Immediately)",
+                "Call Transfer on spot"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Call Forwarding/Transfer Immediate</p><p style=\"text-align: left;\"><br />All incoming calls will be transferred to another predefined number.</p><p style=\"text-align: left;\"><br />&bull; Activation code: &nbsp;<br />&nbsp; &nbsp; *21*T/NO#<br />&nbsp; e.g. &nbsp;*09*0212254155#<br />&bull; Deactivation code: &nbsp;<br />&nbsp; &nbsp; #21#<br />&bull; Activation Procedure<br />&nbsp; &nbsp;&ldquo;On Call&rdquo;<br />&nbsp; &nbsp;Charges=Free</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/Call transfer busy",
+            "patterns": [
+                "Call transfer busy",
+                "Call Forwarding on busy mode",
+                "Call transfer on busy mode",
+                "Call Transfer(Busy)"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Call Transfer -Busy Mode Mode</p><p style=\"text-align: left;\"><br />If you are too busy to answer the phone; the incoming call will be transferred automatically to another predefined number.</p><p style=\"text-align: left;\">&bull; Activation code: &nbsp;<br />&nbsp; &nbsp; *09*T/NO#<br />&nbsp; e.g. &nbsp;*09*0212254155#<br />&bull; Deactivation code: &nbsp;<br />&nbsp; &nbsp; #09#<br />&bull; Activation Procedure<br />&nbsp; &nbsp;&ldquo;On Call&rdquo;<br />&nbsp; &nbsp;Charges=Free</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://182.180.158.25/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/Call Transfer No Reply",
+            "patterns": [
+                "Call Transfer No Reply",
+                "Call Forwarding  (No Reply)",
+                "Call Transfer (No Reply)"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Call Transfer (No Reply)</span></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">When you are unable to pick up the call, use this service to automatically transfer the call to another predefined number.</p><p style=\"text-align: left;\">&bull; Activation code: &nbsp;<br />&nbsp; &nbsp; *06*T/NO#<br />&nbsp; e.g. &nbsp;*09*0212254155#<br />&bull; Deactivation code: &nbsp;<br />&nbsp; &nbsp; #06#<br />&bull; Activation Procedure<br />&nbsp; &nbsp;&ldquo;On Call&rdquo;<br />&nbsp; &nbsp;Charges= Free</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://182.180.158.25/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/3 Way Conference Call ",
+            "patterns": [
+                "confi call",
+                "3 way conference call",
+                "Conference call"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Conference Call</span></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&bull;With PTCL&rsquo;s Conference Call Service, you can get unlimited automated conference calls which are available 24/7 and you won&rsquo;t have to reschedule.<br />&bull;You can merge two separate calls into a conference call.</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">If a customer wants to confirm about Call conference services then please check his/her number status via CRM.</p><p style=\"text-align: left;\">&bull; IF services are not activated then please activate call conference services Via CRM.<br />&bull; (Firstly query the number then go to change value added and then activate Call Conference)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://182.180.158.25/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/3 Way Conference Call ",
+            "patterns": [
+                "confi call",
+                "3 way conference call",
+                "Conference call"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Conference Call</p><p style=\"text-align: left;\">&bull;With PTCL&rsquo;s Conference Call Service, you can get unlimited automated conference calls which are available 24/7 and you won&rsquo;t have to reschedule.<br />&bull;You can merge two separate calls into a conference call.</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">If a customer wants to confirm about Call conference services then please check his/her number status via CRM.</p><p style=\"text-align: left;\">&bull; IF services are not activated then please activate call conference services Via CRM.<br />&bull; (Firstly query the number then go to change value added and then activate Call Conference)</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://182.180.158.25/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more information</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN VAS/CLI Services",
+            "patterns": [
+                "CLI Services",
+                "CLI",
+                "How to activate CLI?",
+                "What is CLI?",
+                "caller line identification "
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Caller Line Identification (CLI)</span></p><p style=\"text-align: left;\">Now you can avoid prank and spam calls, by knowing a caller&rsquo;s number through PTCL CLI service.</p><p style=\"text-align: left;\">If customer wants to confirm about CLI services then&nbsp;<br />Check his/her number status via CRM.</p><p style=\"text-align: left;\">---------------------------------------</p><p style=\"text-align: left;\">&bull;If services are not activated then activate CLI services Via CRM.<br />(Firstly query the number then go to change value added and then activate CLI)</p><p style=\"text-align: left;\">&bull;If services already activate then probe to the customer about telephone set &amp; line distortion.<br />&bull;If line clear &amp; customer check telephone set then log a complaint in CRM.</p><p style=\"text-align: left;\">Note: TAT of activation would be 24 hours</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/pstn-vas/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Feedback",
+            "patterns": [
+                "Feedback",
+                "i want to give feedback",
+                "who is your owner?",
+                "who made you",
+                "who is your developer?",
+                "who is your manager?"
+            ],
+            "responses": [
+                "<p>HI -</p><p>Have any feedback? I would love to hear from you :)</p><p>Please leave a comment on&nbsp;</p><p><span style=\"background-color: #fbeeb8;\">v.umairismail@ptclgroup.com</span></p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TAT & Charges/Data Down/UP Grade TAT",
+            "patterns": [
+                "broadband package downgrade tat",
+                "broadband package upgrade tat",
+                "internet pkg upgrade tat",
+                "BB pkg upgrade tat",
+                "Data Down/UP Grade TAT"
+            ],
+            "responses": [
+                "<p>Provide 4 Hours TAT to customer for Data rate Upgrade/downgrade.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/tat-and-charges/\" target=\"_blank\" rel=\"noopener\">Click here for other TAT &amp; Charges info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TAT & Charges/Duplicate Bill By Post",
+            "patterns": [
+                "Duplicate Bill By Post  TAT",
+                "dbill by post tat",
+                "Duplicate Bill By Post tat"
+            ],
+            "responses": [
+                "<p>Please provide 3 working days TAT to the customer for duplicate bill via Post.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/tat-and-charges/\" target=\"_blank\" rel=\"noopener\">Click here for other TAT &amp; Charges info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR by Email TAT",
+            "patterns": [
+                "CDR by Email TAT",
+                "what is the TAT of CDR by email"
+            ],
+            "responses": [
+                "<p>Provide Two Hours TAT to customer for CDR by Email.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR by Post TAT",
+            "patterns": [
+                "CDR by Post TAT"
+            ],
+            "responses": [
+                "<p>Communicate customer 3 Working Days TAT for CDR by Post.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TAT & Charges/ Shifting (Same Exchange) TAT",
+            "patterns": [
+                "shifting tat for same exchange",
+                "shifting in same exchange tat",
+                "Shifting (Same Exchange) TAT"
+            ],
+            "responses": [
+                "<p>Please provide 3 working days TAT to customer for Shifting in Same Exchange.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/tat-and-charges/\" target=\"_blank\" rel=\"noopener\">Click here for other TAT &amp; Charges info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "TAT& Charges/Shifting (External Exchange) TAT",
+            "patterns": [
+                "shifting tat for external",
+                "shifting in external exchange tat",
+                "Shifting for external exchange tat",
+                "Shifting (External Exchange) TAT"
+            ],
+            "responses": [
+                "<p>Please provide 7 working days TAT to customer for Shifting in external Exchange.</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/tat-and-charges/\" target=\"_blank\" rel=\"noopener\">Click here for other TAT &amp; Charges info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Helpline",
+            "patterns": [
+                "PTCL Helpline",
+                "Corporate helpline",
+                "SME Helpline",
+                "billing helpline",
+                "PTA helpline",
+                "pta helpline"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/email-addresses-and-help-lines/\" target=\"_blank\" rel=\"noopener\">Click here to get the Helpline related Details</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CDR",
+            "patterns": [
+                "CDR",
+                "Call details records"
+            ],
+            "responses": [
+                "<p>Click on the below options</p>"
+            ],
+            "choices": [
+                "CDR Required By Email",
+                "CDR Required By Post",
+                "CDR by Self-Care Apps",
+                "CDR For Corp Customer",
+                "CDR by Email TAT",
+                "CDR by Post TAT"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Main Menu/Help",
+            "patterns": [
+                "Main Menu",
+                "Menu",
+                "Help"
+            ],
+            "responses": [
+                "<p>Select the below options from Main Menu. You can always check the main menu by writing \"<span style=\"background-color: #fbeeb8;\">Menu</span>\" or \"<span style=\"background-color: #fbeeb8;\">Help</span>\".</p>"
+            ],
+            "choices": [
+                "PSTN Packages",
+                "PSTN VAS",
+                "Broadband Packages",
+                "Broadband Promotions",
+                "PTCL Bill payment options",
+                "Billing Adjustments",
+                "Bill Complaint Handling",
+                "PSTN Complaints"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Archive Not Deployed-PSTN Adjustment",
+            "patterns": [
+                "Archive Not Deployed-PSTN Adjustment",
+                "Archive Not Deployed-PSTN",
+                "pstn late deployed adjustment",
+                "pstn archived not deployed adjustment",
+                "Archive Not Deployed-PSTN or Deployed Late adjustment"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\">Complaint Types: Archive Not Deployed of PSTN</p><p style=\"text-align: left;\">&bull;Scenario # 1 :If call record is not found in RMS after order completion in CRM<br />&bull;Scenario # 2:If there is service archived in CRM&nbsp;<br />&bull;Calls record is available but customer insists that service is not provided</p><p style=\"text-align: left;\">-------</p><p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">Verifications&nbsp;</span><br />&bull; Check installation date in CRM&nbsp;<br />&bull; Check call details through RMS&nbsp;<br />&bull; Confirm Dialed Calls</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/billing-adjustment-process-1/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN Complaints",
+            "patterns": [
+                "voice complaints",
+                "telephone complaint",
+                "PSTN Complaint",
+                "PSTN Complaints"
+            ],
+            "responses": [
+                "<p>Click on below buttons to get details of PSTN complaints.</p><p>&nbsp;</p>"
+            ],
+            "choices": [
+                "PSTN No Dial Tone issue",
+                "PSTN Noise issue",
+                "PSTN Cross Talk issue",
+                "PSTN Call Drop issue",
+                "PSTN Busy Tone issue"
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN No Dial Tone Complaint",
+            "patterns": [
+                "No Dial Tone issue",
+                "No Dial Tone Complaint",
+                "PSTN No Dial Tone Complaint",
+                "PSTN No Dial Tone issue"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\"><strong>PSTN No Dial Tone Complaint</strong></span></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&bull;Ask/verify problematic Number<br />&bull;Check number status in Installed Services (should be active)<br />&bull;Ask customer to check dial tone<br />&bull;Ask customer to check phone set and wire connection</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN Busy Tone issue",
+            "patterns": [
+                "PSTN Busy Tone issue complaint",
+                "PSTN Busy Tone issue"
+            ],
+            "responses": [
+                "<p><span style=\"background-color: #fbeeb8;\">PSTN Busy Tone issue</span></p><p>&nbsp;</p><p>&bull;Ask/verify problematic Number<br />&bull;Check number status in Installed Services (should be active)<br />&bull;Ask customer to check phone set<br />&bull;Ask customer if he is getting busy tone</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN Noise issue",
+            "patterns": [
+                "PSTN Noise issue",
+                "noise issue complaint",
+                "PSTN Noise",
+                "landline noise issue"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><strong><span style=\"background-color: #fbeeb8;\">PSTN Noise issue</span></strong></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&bull;Ask/verify problematic Number<br />&bull;Check number status in Installed Services (should be active)<br />&bull;Ask customer to check phone set<br />&bull;Ask customer to check splitter wire connection</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN Call Drop issue",
+            "patterns": [
+                "PSTN Call Drop complaint",
+                "PSTN Call Drop issue"
+            ],
+            "responses": [
+                "<p><strong><span style=\"background-color: #fbeeb8;\">PSTN Call Drop issue</span></strong></p><p>&nbsp;</p><p>&bull;Ask/verify problematic Number<br />&bull;Check number status in Installed Services (should be active)<br />&bull;Ask customer to check wire connection</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "PSTN Cross Talk issue",
+            "patterns": [
+                "PSTN Cross Talk Complaint",
+                "PSTN Cross Talk issue"
+            ],
+            "responses": [
+                "<p style=\"text-align: left;\"><span style=\"background-color: #fbeeb8;\">PSTN Cross Talk issue</span></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&bull;Ask/verify problematic Number<br />&bull;Check number status in Installed Services (should be active)<br />&bull;Ask customer to check phone set<br />&bull;Ask customer if he hears someone else voice during call</p>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                ""
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Home-FI",
+            "patterns": [
+                "Home Fi",
+                "homefi",
+                "HOME-FI",
+                "PTCL-HOME-FI",
+                "wireless home fi"
+            ],
+            "responses": [
+                "<div class=\"vc_row wpb_row vc_row-fluid\"><div class=\"wpb_column vc_column_container vc_col-sm-12\"><div class=\"vc_column-inner \"><div class=\"wpb_wrapper\"><div class=\"wpb_text_column wpb_content_element \"><div class=\"wpb_wrapper\"><p>PTCL is providing&nbsp;<strong>Wireless Home-Fi services&nbsp;</strong>(as a pilot project) to their&nbsp;<strong><u>I<span style=\"background-color: #fbeeb8;\">slamabad/Rawalpindi</span></u></strong>&nbsp;customers where our Wireline (xDSL) services are not feasible.</p></div></div></div></div></div></div><div class=\"vc_row wpb_row vc_row-fluid\"><div class=\"wpb_column vc_column_container vc_col-sm-12\"><div class=\"vc_column-inner \"><div class=\"wpb_wrapper\"><div class=\"wpb_text_column wpb_content_element \"><div class=\"wpb_wrapper\"><p><span style=\"background-color: #fbeeb8;\"><strong><u>Product details and Handling:</u></strong></span></p><p>&nbsp;</p><ul><li>Wireless Home-Fi Services comes with&nbsp;<strong>4Mbps speed</strong>&nbsp;and&nbsp;<strong>Unlimited downloading</strong></li><li>Home-Fi installation charges are&nbsp;<strong>Rs.3500 (One Time Cost)</strong>&nbsp;and&nbsp;<strong>Monthly bill is Rs.2000&nbsp;</strong>(Inclusive of taxes)</li><li>Home-Fi will be provided to only those customers of&nbsp;<strong>Islamabad/Rawalpindi</strong>&nbsp;where our Wireline (xDSL) services are not feasible</li></ul></div></div></div></div></div></div>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/ptcl-home-fi/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "80% Discounted STB Offer for Flash Fiber Customers",
+            "patterns": [
+                "80% Discounted STB Offer for Flash Fiber Customers",
+                "80% discount on STB",
+                "80 percent discount on stb"
+            ],
+            "responses": [
+                "<div class=\"vc_row wpb_row vc_row-fluid\"><div class=\"wpb_column vc_column_container vc_col-sm-12\"><div class=\"vc_column-inner \"><div class=\"wpb_wrapper\"><div class=\"wpb_text_column wpb_content_element \"><div class=\"wpb_wrapper\"><h4><span style=\"background-color: #fbeeb8;\"><strong>\"80% Discounted STB Offer for Flash Fiber Customers\"</strong></span></h4><p>&nbsp;</p><p>A&nbsp;new&nbsp;<strong>80% Discounted STB Offer&nbsp;</strong>for&nbsp;<strong>Flash Fiber&nbsp;</strong>customers is going to be launched from <span style=\"background-color: #fbeeb8;\"><strong>January 27<sup>th&nbsp;</sup>2022</strong></span>,&nbsp;The campaign will be available&nbsp;for regions (ITR &amp; LTR-S) for Flash Fiber customers only.</p><p>&nbsp;</p><h3><strong>Brief</strong>:</h3><ol><li>Offering Smart TV STB with 80% discount at a discounted price of PKR 1200</li><li>Offer is for Flash Fiber customers ONLY</li></ol><p>Offer valid for;</p><ul><li>New Triple Play Orders</li><li>Double Play to Triple Play conversion</li><li>xDSL to Flash Fiber Conversion</li></ul></div></div></div></div></div></div>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/80-discounted-stb-offer-flash-fiber-customers/\" target=\"_blank\" rel=\"noopener\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "CVM Packages",
+            "patterns": [
+                "CVM Packages List",
+                "cvm packages",
+                "CVM"
+            ],
+            "responses": [
+                ""
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><strong><a href=\"http://10.192.5.15/ib/cvm-offers/\">Click here to get complete List of CVM Packages</a></strong></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        },
+        {
+            "tag": "Flash Fiber 250Mbps Unlimited",
+            "patterns": [
+                "Flash Fiber 250Mbps Unlimited",
+                "what are the charges of 250mb Flash fiber"
+            ],
+            "responses": [
+                "<ul><li>BB Package: 250Mbps Unlimited</li><li>Monthly Charges (Rs.): 14,999</li><li>Data volume: Unlimited</li><li>Technology: FTTH</li><li>Download Speed: 250Mbps</li><li>Upload Speed: 187.5Mbps</li><li>Free On Net Calls</li><li>CLI : Free</li><li>Smart TV (Rs.) : 300 (1st)</li><li>Smart TV App (Rs.): Free</li><li>VAS Bundle: Free</li><li>Content &amp; Minutes Add On:</li><ul><li><u>&nbsp;</u><u>Netflix, eJunior, Starzplay, 200 Mobile min in Rs. </u><u>2</u><u>00</u></li></ul></ul>"
+            ],
+            "choices": [
+                ""
+            ],
+            "external_link": [
+                "<p><a href=\"http://10.192.5.15/ib/flash-fiber-new-portfolio/\">Click here for more info</a></p>"
+            ],
+            "context_set": [
+                ""
+            ],
+            "context_filter": [
+                ""
+            ]
+        }
+    ]
+}

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>PTCL - Chat UI</title>
+
+    <!--  Main Style Sheet and Icon (Font Awesome, Material Icons, Feather Icons)  -->
+    <link rel="stylesheet" href="./static/style.css">
+    <link href="./static/lib/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./static/lib/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./static/lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="./static/lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/lib/bootstrap-5.1.3-dist/twitter-css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/lib/billcalc-widget-1.0.0/style.css">
+    <script type="text/javascript" src="./static/lib/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+<!--      .modal-backdrop-->
+<!--{-->
+<!--    opacity:0 !important;-->
+<!--}-->
+    </style>
+
+  </head>
+
+
+<!--  Main Body -->
+<body style="min-height:100%; background:transparent;">
+
+  <!--Starting Bill Calculator Html Front-end-->
+  <div class="modal fade" id="dashboardModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="min-height:535px;">
+        <div class="modal-header" style="min-height: 530px;">
+
+          <!--PEN CONTENT     -->
+          <div class="content">
+            <!--content inner-->
+            <div class="content__inner">
+
+              <div class="container overflow-hidden">
+                <!--multisteps-form-->
+                <div class="multisteps-form mb-4">
+
+                  <!--progress bar-->
+                  <div class="row mt-4">
+                    <div class="col-sm-12 ml-auto mr-auto mb-4">
+                      <div class="multisteps-form__progress">
+                        <button class="multisteps-form__progress-btn js-active" type="button" id="page1-btn" title="Page1"></button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Page2"></button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Page3"></button>
+                        <button class="multisteps-form__progress-btn" type="button" title="Page4"></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Close Button for Bill Calculator-->
+                  <button type="button" data-dismiss="modal" class="btn-close" style="position:absolute; top:15px; right:15px" aria-label="Close"></button>
+
+                  <!--form panels-->
+                  <div class="row">
+                    <div class="col-sm-12 m-auto">
+                      <form class="multisteps-form__form">
+
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                          <h3 class="multisteps-form__title text-center">Select Region</h3>
+                          <div class="multisteps-form__content">
+
+                            <div class="form-row mt-4">
+                              <div class="col-sm-12">
+                                <select class="form-control" id="reg-sel">
+                                <option name="ISB" value="ISB" >ISB</option>
+                                <option name="AJK" value="AJK">AJK</option>
+                                <option name="FATA" value="FATA">FATA</option>
+                                <option name="SINDH" value="SINDH">SINDH</option>
+                                <option name= "KPK" value="KPK">KPK</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                          <h3 class="multisteps-form__title">Service Charges</h3>
+                          <div class="multisteps-form__content">
+
+                            <div class="form-row mt-4">
+                              <div class="col-6">
+                                <label>PSTN Package</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number" name="c6" id="pstn" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-1">
+                              <div class="col-6">
+                                <label>PSTN VAS</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c7" id="pstn-vas" value="{{ request.form['c7'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>PSTN Installation Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c8" id="pstn-chrgs" value="{{ request.form['c8'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>PSTN Voice Add-Ons/Bundles</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number" name="c9" id="pstn-voice" value="{{ request.form['c9'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Broadband Package</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c11" id="bbpkg" value="{{ request.form['c11'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Broadband VAS</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c12" id="bbvas" value="{{ request.form['c12'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>BB Installation Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number" name="c13" id="bbchrgs"  value="{{ request.form['c13'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                              <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                          <h3 class="multisteps-form__title">Additional Services</h3>
+                          <div class="multisteps-form__content">
+
+                            <div class="form-row mt-4">
+                              <div class="col-6">
+                                <label>Smart TV/IPTV</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c14" id="smrttv" value="{{ request.form['c14'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>IPTV Installation Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c15"  id="iptvchrgs" value="{{ request.form['c15'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>IPTV/OTT Additional Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c16" id="ottadd" value="{{ request.form['c16'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Equipment (Set Top Box/Modem/Camera)</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c17" id="eqp" value="{{ request.form['c17'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Smart TV App (Basic Fee Rs.99)/Netflix</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number"  name="c18"  id="smrttvnetflix" value="{{ request.form['c18'] }}" placeholder="&nbsp;0&nbsp;"/>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Other Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <input class="multisteps-form__input form-control" type="number" name="c10" id="otherchrgs"  value="{{ request.form['c10'] }}" placeholder="0"/>
+                              </div>
+                            </div>
+
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                              <button class="btn btn-success ml-auto js-btn-next" type="submit" id="btn-submit" title="Calculate">Calculate</button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!--single form panel-->
+                        <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                          <h3 class="multisteps-form__title">Bill Summary</h3>
+                          <div class="multisteps-form__content">
+
+                            <div class="form-row mt-4">
+                              <div class="col-6">
+                                <label>Landline</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e1" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>BroadBand</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e2" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>IPTV Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e3" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Equipment</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e4" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Installation Charges</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e5" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Smart TV App (OTT)/Netflix</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e6" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Service Tax/FED (BB)</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e10" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Service Tax/FED (IPTV)</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e9" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>Service Tax/FED (Voice)</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e7" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>GST (On Device Only)</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e8" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>WHT (10%)</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e11" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-2">
+                              <div class="col-6">
+                                <label>WHT (15%) On BB</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="e12" style="text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="form-row mt-4 text-center">
+                              <div class="col-6">
+                                <label style="font-weight: bold;">Total Amount</label>
+                              </div>
+                              <div class="col-6">
+                                <div id="entry" style="color:red; font-weight: bold; text-align:right;">0</div>
+                              </div>
+                            </div>
+
+                            <div class="button-row d-flex mt-4">
+                              <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!--END Bill Calculator Html Front-end-->
+
+  <!--Start Chatbot Front-end-->
+  <div id="chat-circle" class="btn btn-raised">
+    <div id="chat-overlay"></div>
+    <i class="material-icons">child_care</i>
+  </div>
+
+  <div class="chat-box" id="chatbot-box">
+
+    <div class="chat-box-header">
+      <img style="float: left; margin: 3px 1px 0px 3px;border-radius: 25px;" src="./static/logo1.png" alt="Smiley face" height="35" style="vertical-align:bottom;margin-right: 250px;">
+      <h1 style="float: center; padding-top: 5px; margin-right: 85px; font-size:18px; margin-left: 55px;">PTCL Knowledge Bot</h1>
+      <img style="float: right; margin-left: 20px; margin: -44px 15px 0px 177px; padding-top: 7px;" src="./static/logo.png" alt="Smiley face" height="30" style="vertical-align:bottom;margin-left: 250px;">
+      <a class="btn btn-danger btn-sm btn-floating" style="position:absolute; top:-10px; right:-10px" href="#!" role="button">X</a>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay"></div>
+      <div class="chat-logs"></div><!--chat-log -->
+    </div>
+    <div class="chat-input" id = "my-data">
+      <form>
+        <input type="text" id="chat-input" placeholder="What is your Query?"/>
+        <button style="margin-left: 100%;" class="chat-submit" type="submit" id="chat-submit"><i class="material-icons">send</i></button>
+        <button style="margin-right: 30px;" class="chat-submit"  type="button" data-toggle="modal" data-target="#dashboardModal"><i class="material-icons">dashboard</i></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- partial -->
+<script  src="./static/lib/billcalc-widget-1.0.0/script.js"></script>
+<script  src="./static/lib/bootstrap-5.1.3-dist/twitter-js/bootstrap.min.js"></script>
+<!---->
+
+</body>
+</html>
+
+<script>
+  <!------------- Start Bill Calculator Pop-Up Fix ------------------------>
+
+  $('#dashboardModal').on('show.bs.modal', function (event)
+  {
+    setTimeout(function () {
+        $("#page1-btn").click();
+    }, 200);
+  })
+
+  <!------------- End Bill Calculator Pop-Up Fix -------------------------->
+
+  function getRndInteger(min, max)
+  {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+  $(function()
+  {
+    var INDEX = 0;
+    var id = 0;
+    var dps = [];
+    // get response listener
+    $("#chat-submit").click(function(e)
+    {
+      e.preventDefault();
+      var rawText = $("#chat-input").val();
+
+      if (rawText != "")
+      {
+        generate_message(rawText, 'self');
+          $.ajax({
+            data: {
+              msg: rawText,
+            },
+            type: "POST",
+            url: "/get",
+          }).done(function (data)
+          {
+                //////////////////////////////////----Responses----///////////////////////////////////////
+                if (data.randomizer == false)
+                {
+                  if (data.responses[0] != "" && data.responses != "empty")
+                  {
+                      generate_message(data.responses[0], 'user');
+                  }
+                }
+
+                //////////////////////////////////----Randomizer/Extra Response----///////////////////////////////////////
+
+                if (data.extra_responses != "empty" && data.extra_responses.length != 0)
+                {
+                  if (data.randomizer == true)
+                  {
+                      var rnd = getRndInteger(0, data.extra_responses.length)
+
+                      if (rnd < data.extra_responses.length)
+                      {
+                        generate_message(data.extra_responses[rnd], 'user');           //Generate Randon Response
+                      }
+                      else
+                      {
+                        generate_message(data.responses[0], 'user');                    //Generate Main Response as Random
+                      }
+                  }
+                  else
+                  {
+                      for (let i = 0; i < data.extra_responses.length; i++)
+                      {
+                        generate_message(data.extra_responses[i], 'user');         //Generate All Extra Responses
+                      }
+                  }
+                }
+
+                //////////////////////////////////----Choices----///////////////////////////////////////
+
+                if (data.choices != "empty" && data.choices[0] != "")
+                {
+                    generate_choices(data.choices);
+                }
+
+                //////////////////////////////////----External Links----///////////////////////////////////////
+
+                if (data.link != "empty" && data.link[0] != "")
+                {
+                    generate_message(data.link[0],'user');
+                }
+
+          });
+      }
+  });
+
+
+  // clickable choices listener
+  $(document).on('click', '.res-msg-text', function (event) {
+     var node = document.getElementById(event.target.id);
+     var str = node.textContent.trim();
+     generate_message(str,'self');
+     $.ajax({
+          data: {
+            msg: str,
+          },
+          type: "POST",
+          url: "/get",
+          }).done(function (data)
+          {
+                //////////////////////////////////----Responses----///////////////////////////////////////
+                if (data.randomizer == false)
+                {
+                  if (data.responses[0] != "" && data.responses != "empty")
+                  {
+                      generate_message(data.responses[0], 'user');
+                  }
+                }
+
+                //////////////////////////////////----Randomizer/Extra Response----///////////////////////////////////////
+
+                if (data.extra_responses != "empty" && data.extra_responses.length != 0)
+                {
+                  if (data.randomizer == true)
+                  {
+                      var rnd = getRndInteger(0, data.extra_responses.length)
+
+                      if (rnd < data.extra_responses.length)
+                      {
+                        generate_message(data.extra_responses[rnd], 'user');           //Generate Randon Response
+                      }
+                      else
+                      {
+                        generate_message(data.responses[0], 'user');                    //Generate Main Response as Random
+                      }
+                  }
+                  else
+                  {
+                      for (let i = 0; i < data.extra_responses.length; i++)
+                      {
+                        generate_message(data.extra_responses[i], 'user');         //Generate All Extra Responses
+                      }
+                  }
+                }
+
+                //////////////////////////////////----Choices----///////////////////////////////////////
+
+                if (data.choices != "empty" && data.choices[0] != "")
+                {
+                    generate_choices(data.choices);
+                }
+
+                //////////////////////////////////----External Links----///////////////////////////////////////
+
+                if (data.link != "empty" && data.link[0] != "")
+                {
+                    generate_message(data.link[0],'user');
+                }
+
+          });
+  });
+
+
+  // generate choices
+  function generate_choices (arr)
+  {
+    var str="";
+    str += "<table width = '100%',border=1> <tr>";
+    str += "<td style = 'vertical-align:top;'> <img src=\"/static/ptcl.png\" width = '50px' height = '50px'> <\/td>";
+    str += "<td>"
+    for (var i=0 ; i<arr.length ;i++)
+    {
+        str += "          <div id='res-msg-"+id+"' class=\"res-msg-text\">";
+        str += arr[i];
+        str += "          <\/div>";
+        id++;
+    }
+    str += "<\/td>";
+    str += "<\/tr><\/table>";
+    $(".chat-logs").append(str);
+    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);
+  }
+
+  // Ajax button submit for bill calculator
+  $("#btn-submit").click(function(e)
+  {
+    e.preventDefault();
+    var selected_region = $('#reg-sel').find('option:selected').val(); 
+    var c6_val = $("#pstn").val();
+    var c7_val = $("#pstn-vas").val();
+    var c8_val = $("#pstn-chrgs").val();
+    var c9_val = $("#pstn-voice").val();
+    var c10_val = $("#otherchrgs").val();
+    var c11_val = $("#bbpkg").val();
+    var c12_val = $("#bbvas").val();
+    var c13_val = $("#bbchrgs").val();
+    var c14_val = $("#smrttv").val();
+    var c15_val = $("#iptvchrgs").val();
+    var c16_val = $("#eqp").val();
+    var c17_val = $("#smrttvnetflix").val();
+    var c18_val = $("#ottadd").val();
+    
+    $.ajax({
+      data:{
+        c6:c6_val,
+        c7:c7_val,
+        c8:c8_val,
+        c9:c9_val,
+        c10:c10_val,
+        c11:c11_val,
+        c12:c12_val,
+        c13:c13_val,
+        c14:c14_val,
+        c15:c15_val,
+        c16:c16_val,
+        c17:c17_val,
+        c18:c18_val,
+        RGN:selected_region,
+      },
+      type:"POST",
+      url:"/billingCalc_get",
+    }).done(function (data)
+    {
+      document.getElementById("entry").innerHTML = data['entry'];
+      document.getElementById("e1").innerHTML = data['e1'];
+      document.getElementById("e2").innerHTML = data['e2'];
+      document.getElementById("e3").innerHTML = data['e3'];
+      document.getElementById("e4").innerHTML = data['e4'];
+      document.getElementById("e5").innerHTML = data['e5'];
+      document.getElementById("e6").innerHTML = data['e6'];
+      document.getElementById("e7").innerHTML = data['e7'];
+      document.getElementById("e8").innerHTML = data['e8'];
+      document.getElementById("e9").innerHTML = data['e9'];
+      document.getElementById("e10").innerHTML = data['e10'];
+      document.getElementById("e11").innerHTML = data['e11'];
+      document.getElementById("e12").innerHTML = data['e12'];
+    }); 
+  })  
+
+
+ //------------------------------------------------------------------------------------
+  $("#btn-check").click(function(e) {
+    e.preventDefault();
+    var rawText = $("#billing-number").val();
+           $.ajax({
+             data: {
+             msg: rawText,
+          },
+          type: "POST",
+          url: "/billingdata",
+        }).done(function (data) {
+
+          document.getElementById("show-billing-result").innerHTML = data;
+
+        });
+  })
+
+
+  //generate response
+  function generate_message(msg, type) {
+    INDEX++;
+    var str="";
+    str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
+    str += "          <span class=\"msg-avatar\">";
+      if (type=='self'){
+      str += "            <img src=\"/static/user.png\">";
+    }
+    else{
+      str += "            <img src=\"/static/ptcl.png\">";
+    }
+    str += "          <\/span>";
+    str += "          <div class=\"cm-msg-text\">";
+    str += msg;
+    str += "          <\/div>";
+    str += "        <\/div>";
+    $(".chat-logs").append(str);
+    $("#cm-msg-"+INDEX).hide().fadeIn(300);
+    if(type == 'self'){
+     $("#chat-input").val('');
+    }
+    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);
+  }
+
+  //send btn listener
+  $(document).delegate(".chat-btn", "click", function() {
+    var value = $(this).attr("chat-value");
+    var name = $(this).html();
+    $("#chat-input").attr("disabled", false);
+    generate_message(name, 'self');
+  })
+
+
+  //toggle chatbot btn
+  $("#chat-circle").click(function() {
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+  })
+
+
+  //toggle chatbot header
+  $(".chat-box-header").click(function() {
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+  })
+
+
+  //auto pop up chat window
+  function autoPopUpChatBar()
+  {
+    $("#chat-circle").toggle('scale');
+    $(".chat-box").toggle('scale');
+  }
+  window.onload = autoPopUpChatBar;
+  })
+</script>
