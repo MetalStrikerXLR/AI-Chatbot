@@ -1,5 +1,5 @@
-# PTCL-TND-Chatbot
-## _Prototype Chatbot for PTCL Training Department_
+# AI-Chatbot
+## _Prototype Chatbot with Intent Detection based Response
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
 
 Description - TBD
@@ -24,7 +24,7 @@ python -m nltk.downloader popular
 pip install flask
 ```
 
-3). Install NGROK for Flask as well as Flask-CORS for Cross-Domain data Exchange
+3). Install NGROK for Flask as well as Flask-CORS for Cross-Domain data Exchange (needed for deployment and access to users)
 ```sh
 pip install flask-ngrok
 pip install flask-cors
@@ -35,7 +35,7 @@ pip install flask-cors
 pip install tensorflow
 ```
 
-5). Download and Extract Material Icons and Fontawesome Icons from following link:
+5). Download and Extract Material Icons and Fontawesome Icons from following link (Files too large to be uploaded here):
 ```sh
 https://drive.google.com/file/d/1NVNae_Mhzop8MrOrwTsVVNHptQkJ17lS/view?usp=sharing
 ```
@@ -45,7 +45,7 @@ https://drive.google.com/file/d/1NVNae_Mhzop8MrOrwTsVVNHptQkJ17lS/view?usp=shari
 .\static\lib
 ```
 
+ngrok is not necessary if you want to test it locally. Other option are also availalbe beside ngork which can be used.
+
 ## License
-Property of:
-* 128 Technologies https://128technologies.com.pk
-* PTCL https://ptcl.com.pk
+TBD
